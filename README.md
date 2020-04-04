@@ -12,6 +12,6 @@ Click on any of the links below:
 3. https://dawner.netlify.com/
 4. https://dawnow.github.io/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/575fbe68-0dfa-4819-a1eb-c3aecdf3ff2f/deploy-status)](https://app.netlify.com/sites/dawner/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/956c9675-f5ac-40cf-a616-63303100e3d3/deploy-status)](https://app.netlify.com/sites/dawner/deploys)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
