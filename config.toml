@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://dawnerblog.netlify.com/"
+baseURL = "https://dawner.top/"
 title = "Dawner"
 languageCode = "zh-CN"
 hasCJKLanguage = true
