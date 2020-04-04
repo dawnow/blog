@@ -216,21 +216,20 @@ uglyURLs = false
         name = "文章"
         weight = 1
         pre = "internal"
-        post = "list-alt"
-        identifier = "archive"
+        post = "archive"
     [[menu.main]]
         url = "/categories/"
         name = "分类"
         weight = 2
         pre = "internal"
-        post = "border-all"
+        post = "th"
     [[menu.main]]
         url = "/about/"
         name = "关于"
         weight = 3
         pre = "internal"
-        post = "address-card"
-        identifier = "icon"
+        post = "user-circle"
+        
 
     ## 首页的底部链接
     # [[menu.home]]
@@ -1237,7 +1236,7 @@ uglyURLs = false
     displaySiteCreatedYear = true
 
     # 年份与作者之间的图标，留空（""）则无
-    iconBetweenYearAndAuthor = "user-astronaut"
+    iconBetweenYearAndAuthor = "wpexplorer"
     # 图标颜色
     iconColor = ""
     # 是否开启图标的跳动效果
