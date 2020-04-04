@@ -1,0 +1,38 @@
+.brand {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    color: #3d3d3d;
+}
+
+.nav {
+    font-size: 1em;
+    margin-top: 0.4em;
+}
+
+.home .poetry {
+    padding: 12em 1em;
+}
+
+.menu-item .icon {
+    display: none;
+}
+
+
+@media (max-width: $maxWidth) {
+    .nav {
+        margin: 2em 0;
+    }
+    .menu-item .icon {
+        display: inline-block;
+    }
+    .menu-item-name {
+        font-size: 80%;
+    }
+}
+
+.nav-toggle {
+    transform: translateY(0.4em);
+}
+
+
