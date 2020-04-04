@@ -1,16 +1,11 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "description": "Dawner",
+  "description": "Dawn",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "git config --global core.quotePath false && hugo --gc --minify --cleanDestinationDir && npm run index && ./node_modules/gulp/bin/gulp.js build",
-    "index": "hugo-lunr",
-    "algolia": "atomic-algolia"
-  },
-  "engines": {
-    "node": "12.x"
+    "build": "git config --global core.quotePath false && hugo --gc --minify --cleanDestinationDir && ./node_modules/gulp/bin/gulp.js build",
   },
   "repository": {
     "type": "git",
@@ -21,7 +16,7 @@
     "hugo",
     "hugo-theme-meme"
   ],
-  "author": "Dawn",
+  "author": "Dawnr",
   "license": "CC-BY-NC-SA-4.0",
   "bugs": {
     "url": "https://github.com/dawnow/blog/issues"
@@ -30,13 +25,8 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-uglify": "^3.0.2",
-    "hugo-search-index": "^0.5.0",
     "readable-stream": "^3.6.0",
     "uglify-es": "^3.3.9",
     "workbox-build": "^5.0.0"
-  },
-  "dependencies": {
-    "atomic-algolia": "^0.3.17",
-    "hugo-lunr-diaspora": "^1.0.0"
   }
 }
