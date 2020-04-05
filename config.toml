@@ -445,7 +445,7 @@ uglyURLs = false
     # `sections`，则无法关闭树状布局
 
     # 是否显示文章标题
-    displayPosts = true
+    displayPosts = false
 
     # 是否显示每一分类下的文章数
     displayPostsCount = true
@@ -989,7 +989,7 @@ uglyURLs = false
     enableParagraphIndent = true
 
     # 是否缩进第一段（全局设置）
-    indentFirstParagraph = false
+    indentFirstParagraph = true
     # 说明：文章的 Front Matter 中的 `indentFirstParagraph`
     #      的优先级高于此处
 
@@ -1236,7 +1236,7 @@ uglyURLs = false
     displaySiteCreatedYear = true
 
     # 年份与作者之间的图标，留空（""）则无
-    iconBetweenYearAndAuthor = "user-astronaut"
+    iconBetweenYearAndAuthor = "wpexplorer"
     # 图标颜色
     iconColor = ""
     # 是否开启图标的跳动效果
