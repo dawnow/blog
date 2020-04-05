@@ -10,7 +10,6 @@ Click on any of the links below:
 1. https://dawner.top/
 2. https://sailordawner.top/
 3. https://dawner.netlify.com/
-4. https://dawnow.github.io/
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/956c9675-f5ac-40cf-a616-63303100e3d3/deploy-status)](https://app.netlify.com/sites/dawner/deploys)
 

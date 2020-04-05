@@ -1091,7 +1091,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = "https://github.com/dawnow/dawnow.github.io"
+    repoURL = "https://github.com/dawnow/blog"
     # 编辑地址
     repoEditURL = ""
 
@@ -1236,7 +1236,7 @@ uglyURLs = false
     displaySiteCreatedYear = true
 
     # 年份与作者之间的图标，留空（""）则无
-    iconBetweenYearAndAuthor = "wpexplorer"
+    iconBetweenYearAndAuthor = "user-astronaut"
     # 图标颜色
     iconColor = ""
     # 是否开启图标的跳动效果
