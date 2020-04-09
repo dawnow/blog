@@ -19,6 +19,26 @@ draft: false
 - [Google Fonts](https://fonts.google.com/)
 - [reuixiy](https://io-oi.me/)
 
+### 文章分类说明
+
+我目前的文章主要有以下分类，他们分别囊括哪些内容我会在`：`后面进行相关阐释。
+
+[Extract Something](https://dawner.top/categories/extract-something/)：书籍分享与原文摘录
+
+[Fake Evaluation](https://dawner.top/categories/fake-evaluation/)：数码产品相关的胡诌
+
+[Freezing Time](https://dawner.top/categories/freezing-time/)：摄影作品与感悟
+
+[Plan](https://dawner.top/categories/plan/)：阶段性计划与安排
+
+[Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古体诗，之后会尝试现代诗
+
+[Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
+
+[Simple Sharing](https://dawner.top/categories/simple-sharing/)：小教程和一些简单分享
+
+[Video](https://dawner.top/categories/video/)：我做的，别人做的视频
+
 ### 其他平台
 
 个人微信公众号：**Dawner**
