@@ -23,21 +23,22 @@ draft: false
 
 我目前的文章主要有以下分类，他们分别囊括哪些内容我会在`：`后面进行相关阐释。
 
-[Extract Something](https://dawner.top/categories/extract-something/)：书籍分享与原文摘录
+- [About Film](https://dawner.top/categories/about-film/)：影视作品
 
-[Fake Evaluation](https://dawner.top/categories/fake-evaluation/)：数码产品相关的胡诌
+- [About Literature](https://dawner.top/categories/about-literature/)：书籍分享与原文摘录
 
-[Freezing Time](https://dawner.top/categories/freezing-time/)：摄影作品与感悟
+- [About Tech](https://dawner.top/categories/about-tech/)：我们的生活包括现实和数字，科技和数码也都是由硬件和软件共同作用的
 
-[Plan](https://dawner.top/categories/plan/)：阶段性计划与安排
+- [Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟
 
-[Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古体诗，之后会尝试现代诗
+- [Plan](https://dawner.top/categories/plan/)：阶段性计划与安排
 
-[Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
+- [Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古体诗，之后会尝试现代诗
+- [Record](https://dawner.top/categories/record/)：记录时间所留下的痕迹
 
-[Simple Sharing](https://dawner.top/categories/simple-sharing/)：小教程和一些简单分享
+- [Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
 
-[Video](https://dawner.top/categories/video/)：我做的，别人做的视频
+- [Video](https://dawner.top/categories/video/)：我做的，别人做的视频
 
 ### 其他平台
 
