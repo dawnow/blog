@@ -46,15 +46,17 @@ draft: false
 
 ![alt](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20200307163758.png "扫码即可关注")
 
-## 订阅方式
+## 追踪方式
 
-通过[RSS](https://dawner.top/atom.xml)订阅本博客
+通过[Atom](https://dawner.top/atom.xml)／[RSS](https://dawner.top/rss.xml)订阅本博客
 
 通过[邮件](http://eepurl.com/gZ4Djv)订阅本博客
 
-### 联系方式
+本博客为一个[PWA](https://web.dev/progressive-web-apps/)站点，您可以在支持的浏览器右上角点击 `+` 将本站点添加至你的设备以便随时查看
 
-邮箱：dawn.water@qq.com
+## 联系方式
+
+邮箱：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)
 
 社交帐号：见页脚
 
