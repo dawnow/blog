@@ -1,3 +1,11 @@
+/* 顶栏配色 */
+.header-wrapper {
+    padding: 1em 0;
+    -webkit-backdrop-filter: saturate(180%) blur(1em);
+    backdrop-filter: saturate(180%) blur(1em);
+    background: linear-gradient(90deg, rgba(230, 230, 230, 0.102) 0, rgba(230, 230, 230, 0.102) 15%, rgba(230, 230, 230, 0.102) 30%, rgba(230, 230, 230, 0.102) 44%, rgba(230, 230, 230, 0.102) 58%, rgba(230, 230, 230, 0.102) 72%, rgba(230, 230, 230, 0.102) 86%, rgba(230, 230, 230, 0.102) 100%);
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-weight: bold;

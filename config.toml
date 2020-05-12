@@ -471,7 +471,7 @@ uglyURLs = false
     # 列表页面
 
     # 宽度
-    listWidth = 36
+    listWidth = 42
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -1407,7 +1407,7 @@ uglyURLs = false
     homePoetry = ["The universe is symmetrical", "In a parallel universe, you want to be coexists with you", "In an environment of constant change", "Only the brave and free soul, the curiosity of exploration", "It's what makes the world more interesting"]
     siteDescription = "Dawn's Blog in English."
     listDateFormat = "January 2"
-    postWidth = 36
+    postWidth = 42
     fontFamilyTitle = ""
     fontFamilyHeadings = ""
     fontFamilyBody = "'Amiri', serif"
