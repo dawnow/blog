@@ -63,3 +63,9 @@ draft: false
 ##  许可证
 
 若无特殊声明，本站所有文章均按照 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/)发布。
+
+---
+
+*正文底部的小图标为浏览者分享到社交平台的入口
+
+*页面底部的大图标为作者社交账号链接
