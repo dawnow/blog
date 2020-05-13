@@ -250,21 +250,21 @@ uglyURLs = false
     #     identifier = "icon"
 
     ## 社交栏
-    [[menu.socials]]
-        url = "https://weibo.com/5609166080/profile?rightmod=1&wvr=6&mod=personinfo"
-        name = "Weibo"
-        weight = 1
-        pre = "external"
-    [[menu.socials]]
-        url = "https://twitter.com/DawnWooow"
-        name = "Twitter"
-        weight = 2
-        pre = "external"
-    [[menu.socials]]
-        url = "https://www.instagram.com/dawnwooow/"
-        name = "Instagram"
-        weight = 3
-        pre = "external"
+    # [[menu.socials]]
+        # url = "https://weibo.com/5609166080/profile?rightmod=1&wvr=6&mod=personinfo"
+        # name = "Weibo"
+        # weight = 1
+        # pre = "external"
+    # [[menu.socials]]
+        # url = "https://twitter.com/DawnWooow"
+        # name = "Twitter"
+        # weight = 2
+        # pre = "external"
+    # [[menu.socials]]
+        # url = "https://www.instagram.com/dawnwooow/"
+        # name = "Instagram"
+        # weight = 3
+        # pre = "external"
     [[menu.socials]]
         url = "https://www.notion.so/imdawn/a56e04ba801344778e1293b2a4161c30?v=af98cf32a04b47fbbddffb41a3e11881"
         name = "My Film List"
@@ -1263,6 +1263,9 @@ uglyURLs = false
     #      文本或图标，留空（""）则无
     #      https://busuanzi.ibruce.info/
 
+    # 社交链接
+    enableSocials = true
+    # 说明：见 data/Socials.toml
 
     ######################################
     # 多语言

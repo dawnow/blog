@@ -58,5 +58,8 @@ draft: false
 
 邮箱：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)
 
-社交帐号：见页脚
+社交帐号：页面底部
 
+##  许可证
+
+若无特殊声明，本站所有文章均按照 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/)发布。
