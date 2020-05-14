@@ -48,7 +48,7 @@
 blockquote.quote {
     position: relative;
     margin: 2em auto;
-    padding-left: 3em;
+    padding-left: 2em;
     border-left: none;
     border-top: 1px solid var(--color-contrast-lower);
     border-bottom: 1px solid var(--color-contrast-lower);
@@ -63,7 +63,7 @@ blockquote.quote {
         color: var(--color-contrast-low);
         font-size: 3em;
         font-weight: bold;
-        line-height: 1;
+        margin-top: -0.25em;
     }
     &.poetry {
         display: table;
@@ -117,7 +117,7 @@ blockquote.quote-center {
         color: var(--color-contrast-low);
         font-size: 3em;
         font-weight: bold;
-        margin-top: -0.42em;
+        margin-top: -0.25em;
     }
     &::after {
         position: absolute;
