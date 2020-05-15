@@ -323,7 +323,7 @@ uglyURLs = false
     # 在窄视图下隐藏菜单栏并显示一个按钮？
     enableNavToggle = true
 
-    navHeight = "8em"
+    navHeight = "9em"
     # 说明：菜单栏展开时的高度
 
 
@@ -471,7 +471,7 @@ uglyURLs = false
     # 列表页面
 
     # 宽度
-    listWidth = 42
+    listWidth = 36
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -732,7 +732,7 @@ uglyURLs = false
     # 注意：只支持 HSL 颜色值
 
     # 文章的内容宽度
-    postWidth = 42
+    postWidth = 36
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 

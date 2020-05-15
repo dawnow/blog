@@ -25,6 +25,10 @@
     display: none;
 }
 
+.menu-item-name {
+    font-weight: bold;
+}
+
 
 @media (max-width: $maxWidth) {
     .nav {
@@ -41,6 +45,7 @@
 .nav-toggle {
     transform: translateY(0.4em);
 }
+
 
 //西文优化
 
