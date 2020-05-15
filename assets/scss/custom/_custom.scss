@@ -10,7 +10,6 @@
     font-family: Lato, sans-serif;
     font-weight: bold;
     line-height: 1;
-    color: #3d3d3d;
 }
 
 .nav {
@@ -42,6 +41,17 @@
 .nav-toggle {
     transform: translateY(0.4em);
 }
+
+//西文优化
+
+p:lang(en) {
+    line-height: 1.5; /* 西文字母较小，行距从 1.75 减小至 1.5 */
+  }
+p:lang(en) {
+    hyphens: auto; /* 西文自动断词，包括以下两个 -<vendor>-hyphens 的兼容性选项 */
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+  }
 
 //quote
 
