@@ -4,9 +4,7 @@ date: 2019-11-19T21:42:42+08:00
 draft: false
 ---
 
-## 你好
-
-这是我的个人博客，在这里我会通过一些简单的符号来说明和表达一些东西……
+你好，这是我的个人博客，在这里我会通过一些简单的符号来说明和表达一些东西……
 
 若您在浏览过程中遇到任何错误(如错别字、标点符号误用、知识性错误等)，可以通过页脚中的任意一种方式通知我，我将感激不尽。
 
@@ -18,6 +16,7 @@ draft: false
 - [Netlify](https://app.netlify.com/)
 - [Google Fonts](https://fonts.google.com/)
 - [reuixiy](https://io-oi.me/)
+- [Unsplash](https://unsplash.com/)
 
 ## 文章分类说明
 
@@ -46,13 +45,19 @@ draft: false
 
 ![alt](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20200307163758.png "扫码即可关注")
 
+## Notion 仓库
+
+这是我的 Notion 仓库，更多东西正在用拖拉机运送中......
+
+仓库地址：[Dawn's Warehouse](https://www.notion.so/imdawn/Dawn-s-Warehouse-f16d22567aa04496b4e8aa2a2df9ff58)
+
 ## 追踪方式
 
-通过[Atom](https://dawner.top/atom.xml)／[RSS](https://dawner.top/rss.xml)订阅本博客
+通过 [Atom](https://dawner.top/atom.xml) / [RSS](https://dawner.top/rss.xml) 订阅本博客
 
 通过[邮件](http://eepurl.com/gZ4Djv)订阅本博客
 
-本博客为一个[PWA](https://web.dev/progressive-web-apps/)站点，您可以在支持的浏览器右上角点击 `+` 将本站点添加至你的设备以便随时查看
+本博客为一个 [PWA](https://web.dev/progressive-web-apps/) 站点，您可以在支持的浏览器右上角点击 `+` 将本站点添加至你的设备以便随时查看
 
 ## 联系方式
 
@@ -64,8 +69,10 @@ draft: false
 
 若无特殊声明，本站所有文章均按照 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/)发布。
 
----
+## 注意事项
 
-*正文底部的小图标为浏览者分享到社交平台的入口
+* 正文底部的小图标为浏览者分享到社交平台的入口
 
-*页面底部的大图标为作者社交账号链接
+* 页面底部的大图标为作者社交账号链接
+
+* 文章中所有带有..灰色..下划线的部分均为超链接，点击后会在新标签页中打开。
