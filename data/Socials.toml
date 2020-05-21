@@ -7,7 +7,7 @@
 
 [[socials]]
     id = "rss"
-    url = "dawner.top/rss.xml"
+    url = "rss.xml"
     icon = "rss"
     title = "RSS"
     weight = 1
