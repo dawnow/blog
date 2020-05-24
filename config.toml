@@ -216,7 +216,7 @@ uglyURLs = false
         weight = 1
         pre = "internal"
         post = "list-alt"
-        identifier = "icon"
+        identifier = "post"
     [[menu.main]]
         url = "/categories/"
         name = "分类"
@@ -237,10 +237,10 @@ uglyURLs = false
     [[menu.main]]
         weight = 7
         identifier = "lang-switcher"
-    [[menu.main]]
-        weight = 8
-        identifier = "search"
-        post = "search"
+    # [[menu.main]]
+        # weight = 8
+        # identifier = "search"
+        # post = "search"
         
 
     ## 首页的底部链接
@@ -512,7 +512,7 @@ uglyURLs = false
     displayTaxonomyTermCount = true
 
     # 设置一个非负数来限制每一类别项下展示的文章数
-    limitEntriesLimit = 7
+    limitEntriesLimit = 5
 
     ######################################
     # 文章分区范围
@@ -1350,7 +1350,7 @@ uglyURLs = false
 
     # 说明：需要开启 `SearchIndex` 的输出
 
-    enableLunrSearch = true
+    enableLunrSearch = false
     # 说明：https://lunrjs.com/
 
 

@@ -14,10 +14,20 @@
     padding: 12em 1em;
 }
 
-.menu-item .icon {
-    display: none;
+.menu-item {
+    .post, .catagories, .about {
+        display: none;
+    }
 }
 
+[data-theme="dark"] {
+    .theme-icon-dark, #lang-switcher, .footer-icon {
+        opacity: 0.5;
+    }
+}
+#lang-switcher {
+    margin-left: 0.3em;
+}
 
 @media (max-width: $maxWidth) {
     .nav {
@@ -26,8 +36,24 @@
     .menu-item .icon {
         display: inline-block;
     }
-    .menu-item-name {
-        font-size: 80%;
+    .menu-item {
+        .post, .catagories, .about {
+            display: none;
+        }
+    }
+
+    :root {
+        .theme-icon-light {
+            display: inline;
+        }
+    }
+    [data-theme="dark"] {
+        .theme-icon-dark {
+            display: inline !important;
+        }
+    }
+    #lang-switcher {
+        margin: 0;
     }
 }
 
