@@ -35,13 +35,10 @@
     }
     .menu-item {
         .posts, .categories, .about {
-            display: none;
+            display: inline-block;
         }
     }
-    .menu-item-name {
-        font-size: 80%;
-    }
-
+    
     :root {
         .theme-icon-light {
             display: inline;

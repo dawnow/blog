@@ -43,7 +43,7 @@ draft: false
 
 关于我公众号的发布计划请看这篇文章：[Post Arrangement '2020](https://dawner.top/posts/post-arrangement-2020/)
 
-![alt](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20200524131201.png "扫码即可关注")
+![alt](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20200524184343.png "扫码即可关注")
 
 ## Notion 仓库
 
