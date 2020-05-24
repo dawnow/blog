@@ -15,7 +15,7 @@
 }
 
 .menu-item {
-    .post, .catagories, .about {
+    .posts, .categories, .about {
         display: none;
     }
 }
@@ -33,13 +33,13 @@
     .nav {
         margin: 2em 0;
     }
-    .menu-item .icon {
-        display: inline-block;
-    }
     .menu-item {
-        .post, .catagories, .about {
+        .posts, .categories, .about {
             display: none;
         }
+    }
+    .menu-item-name {
+        font-size: 80%;
     }
 
     :root {
