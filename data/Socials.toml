@@ -28,14 +28,14 @@
 
 [[socials]]
     id = "twitter"
-    url = "https://twitter.com/explorer_dawn"
+    url = "https://twitter.com/Whois_Dawn"
     icon = "twitter"
     title = "Twitter"
     weight = 4
 
 [[socials]]
     id = "instagram"
-    url = "https://www.instagram.com/explorer_dawn/"
+    url = "https://www.instagram.com/whois_dawn/"
     icon = "instagram"
     title = "instagram"
     weight = 5
