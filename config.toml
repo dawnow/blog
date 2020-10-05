@@ -659,7 +659,7 @@ uglyURLs = false
     disqusShortname = ""
 
     ## Valine
-    enableValine = true
+    enableValine = false
     valineAppId = "fB3nPgDVQ91Gr8UOHsdhQV0q-gzGzoHsz"
     valineAppKey = "RPf0YYgkqSheTt77hs7VTEkC"
     valinePlaceholder = "撰写评论"
@@ -771,7 +771,7 @@ uglyURLs = false
     # 注意：请遵循格式 https://gohugo.io/functions/format/
 
     # 是否显示发布时间
-    displayPublishedDate = false
+    displayPublishedDate = true
     # 发布时间的图标
     publishedDateIcon = "calendar-alt"
 
@@ -793,12 +793,12 @@ uglyURLs = false
     categoryDelimiter = "|"
 
     # 是否显示字数统计
-    displayWordCount = false
+    displayWordCount = true
     # 字数统计的图标
     wordCountIcon = "pencil-alt"
 
     # 是否显示阅读时长
-    displayReadingTime = false
+    displayReadingTime = true
     # 阅读时长的图标
     readingTimeIcon = "clock"
 
