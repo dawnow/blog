@@ -786,7 +786,7 @@ uglyURLs = false
     expiredDateIcon = "calendar-times"
 
     # 是否显示分类
-    displayCategory = false
+    displayCategory = true
     # 分类的图标
     categoryIcon = "folder"
     # 分类之间的分隔符
