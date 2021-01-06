@@ -20,7 +20,7 @@ draft: false
 
 ## 文章分类说明
 
-我目前的文章主要有以下分类，他们分别囊括哪些内容我会在`：`后面进行相关阐释。
+我目前的文章主要有以下分类（但我更愿意您使用 Tag 来作为筛选的依据），他们分别囊括哪些内容我会在`：`后面进行相关阐释。
 
 - [About Film](https://dawner.top/categories/about-film/)：影视作品
 
@@ -38,12 +38,6 @@ draft: false
 - [Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
 
 - [Video](https://dawner.top/categories/video/)：我做的，别人做的视频
-
-## 微信公众号
-
-关于我公众号的发布计划请看这篇文章：[Post Arrangement '2020](https://dawner.top/posts/post-arrangement-2020/)
-
-![alt](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20200524184343.png "扫码即可关注")
 
 ## Notion 仓库
 

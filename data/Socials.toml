@@ -5,19 +5,19 @@
 #
 # For the `icon`, see SVG.toml
 
-[[socials]]
-    id = "rss"
-    url = "rss.xml"
-    icon = "rss"
-    title = "RSS"
-    weight = 1
+# [[socials]]
+    # id = "rss"
+    # url = "rss.xml"
+    # icon = "rss"
+    # title = "RSS"
+    # weight = 1
 
-[[socials]]
-    id = "email"
-    url = "mailto:jmugeekchen7one@gmail.com"
-    icon = "envelope"
-    title = "Email"
-    weight = 2
+# [[socials]]
+    # id = "email"
+    # url = "mailto:jmugeekchen7one@gmail.com"
+    # icon = "envelope"
+    # title = "Email"
+    # weight = 2
 
 # [[socials]]
     # id = "github"
@@ -26,23 +26,23 @@
     # title = "GitHub"
     # weight = 3
 
-[[socials]]
-    id = "twitter"
-    url = "https://twitter.com/DawnerChen"
-    icon = "twitter"
-    title = "Twitter"
-    weight = 4
+# [[socials]]
+    # id = "twitter"
+    # url = "https://twitter.com/DawnerChen"
+    # icon = "twitter"
+    # title = "Twitter"
+    # weight = 4
 
-[[socials]]
-    id = "instagram"
-    url = "https://www.instagram.com/dawnerchen/"
-    icon = "instagram"
-    title = "instagram"
-    weight = 5
+# [[socials]]
+    # id = "instagram"
+    # url = "https://www.instagram.com/dawnerchen/"
+    # icon = "instagram"
+    # title = "instagram"
+    # weight = 5
 
-[[socials]]
-    id = "weibo"
-    url = "https://weibo.com/5609166080/profile?topnav=1&wvr=6&is_all=1"
-    icon = "weibo"
-    title = "weibo"
-    weight = 6
+# [[socials]]
+    # id = "weibo"
+    # url = "https://weibo.com/5609166080/profile?topnav=1&wvr=6&is_all=1"
+    # icon = "weibo"
+    # title = "weibo"
+    # weight = 6
