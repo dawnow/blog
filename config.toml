@@ -1274,7 +1274,7 @@ uglyURLs = false
     # 多语言
 
     # 是否开启多语言按钮
-    enableLangToggle = true
+    enableLangToggle = false
 
     # 是否在首页隐藏多语言按钮
     hideLangToggleInHome = false

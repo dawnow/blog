@@ -27,7 +27,7 @@ draft: false
 - [About Tech](https://dawner.top/categories/about-tech/)：我们的生活包括现实和数字，科技和数码也都是由硬件和软件共同作用的
 - [Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟
 - [Plan](https://dawner.top/categories/plan/)：阶段性计划与安排
-- [Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古体诗，之后会尝试现代诗
+- [Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古诗，之后会尝试现代诗
 - [Record](https://dawner.top/categories/record/)：记录时间所留下的痕迹
 - [Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
 - [Video](https://dawner.top/categories/video/)：我做的，别人做的视频
@@ -56,7 +56,5 @@ draft: false
 若无特殊声明，本站所有文章均按照 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/) 发布。
 
 ## 注意事项
-
-* 正文底部的小图标为浏览者分享到社交平台的入口
 
 * 文章中所有带有..灰色..下划线的部分均为超链接，点击后会在新标签页中打开。
