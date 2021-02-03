@@ -20,7 +20,7 @@ draft: false
 
 ## 文章分类说明
 
-我目前的文章主要有以下分类（但我更愿意您使用 Tag 来作为筛选的依据），他们分别囊括哪些内容我会在`：`后面进行相关阐释。
+我目前的文章主要有以下分类（但我更愿意使用 Tag 来作为筛选的依据），他们分别囊括哪些内容我会在`：`后面进行相关阐释。
 
 - [About Film](https://dawner.top/categories/about-film/)：影视作品
 - [About Literature](https://dawner.top/categories/about-literature/)：书籍分享与原文摘录
@@ -45,7 +45,7 @@ draft: false
 
 通过 [邮件](http://eepurl.com/gZ4Djv) 订阅本博客
 
-本博客为一个 [PWA](https://web.dev/progressive-web-apps/) 站点，您可以在支持的浏览器右上角点击 `+` 将本站点添加至你的设备以便随时查看
+本博客为一个 [PWA](https://web.dev/progressive-web-apps/) 站点，所以你也可以将本站点添加至你的设备以便随时查看
 
 ## 联系方式
 
