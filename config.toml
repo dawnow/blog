@@ -275,8 +275,8 @@ uglyURLs = false
         # weight = 3
         # pre = "external"
     [[menu.socials]]
-        url = "https://www.notion.so/dawner/a56e04ba801344778e1293b2a4161c30?v=c7a87387d01e4c21b9863e5b7285ec51"
-        name = "My Film List"
+        url = "https://www.notion.so/imdawn/Dawn-s-Warehouse-f16d22567aa04496b4e8aa2a2df9ff58"
+        name = "Warehouse"
         weight = 4
         pre = "external"
 
