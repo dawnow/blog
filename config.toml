@@ -100,9 +100,9 @@ uglyURLs = false
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://io-oi.me/"
+    website = "https://dawner.top/"
     # 推特
-    twitter = "DawnWooow"
+    twitter = "Xi__Wei"
 
 # 相关文章
 [related]
@@ -380,7 +380,7 @@ uglyURLs = false
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = ["宇宙是对称的", "在平行宇宙中，你想成为的自己与你共生共存", "在这个不断更迭换代的大环境里", "只有勇敢自由的灵魂，不断探索的好奇心", "才能促使世界变得更加有趣"]
+    homePoetry = ["「我是躯体，亦是灵魂」", "——孩子这样说道。", "那为什么我们不能像孩子一样讲话呢？"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
