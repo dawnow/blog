@@ -1,0 +1,8 @@
+{
+  "ignore": {
+    "glob-parent": {
+      "versions": "6.0.2",
+      "reason": ""
+    }
+  }
+}
