@@ -2,6 +2,8 @@
   "dependencies": {
     "async": "^3.2.3",
     "glob-parent": "^6.0.2",
+    "glob-watcher": "^5.0.5",
+    "is-glob": "^4.0.3",
     "lodash": "^4.17.21",
     "minimatch": "^5.1.0",
     "minimist": "^1.2.6",
