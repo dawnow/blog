@@ -46,3 +46,10 @@
     # icon = "weibo"
     # title = "weibo"
     # weight = 6
+
+[[socials]]
+id = "mastodon"
+url = "https://alive.bar/@Elephant" # 请填写你的个人页面
+icon = "mastodon" # 设定图标
+title = "Mastodon"
+rel = "me" # 这里是重点, mastodon 认证要求
