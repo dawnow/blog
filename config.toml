@@ -1134,7 +1134,7 @@ uglyURLs = false
     #      的优先级高于此处
 
     # 仓库地址
-    repoURL = "https://github.com/dawnow/dawnow.github.io"
+    repoURL = "https://github.com/dawnow/blog"
     # 编辑地址
     repoEditURL = ""
 
