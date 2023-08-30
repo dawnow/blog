@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: 'Building...'
-      uses: Dawner/hugo-deploy@v1
+      uses: reuixiy/hugo-deploy@v1
       env:
         DEPLOY_REPO: dawnow/dawnow.github.io
         DEPLOY_BRANCH: build
