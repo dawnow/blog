@@ -1310,7 +1310,7 @@ uglyURLs = false
     #      https://busuanzi.ibruce.info/
 
     # 社交链接
-    enableSocials = false
+    enableSocials = true
     # 说明：见 data/Socials.toml
 
     ######################################
