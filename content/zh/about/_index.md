@@ -10,18 +10,26 @@ draft: false
 
 ## 文章分类说明
 
-我目前的文章主要有以下分类（但我更愿意使用 tag 来作为筛选的依据，很矛盾），它们分别囊括哪些内容我会在`：`后面进行相关阐释。
+我目前的文章主要有以下分类（但我更愿意使用 tag 来作为筛选的依据，很矛盾），它们分别涉及哪些内容我会在 `：` 后面进行相关阐释。
 
 - [About Film](https://dawner.top/categories/about-film/)：影视作品
-- [About Literature](https://dawner.top/categories/about-literature/)：书籍分享与原文摘录
-- [About Tech](https://dawner.top/categories/about-tech/)：我们的生活包括现实和数字，科技和数码也都是由硬件和软件共同作用的
-- [Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟
-- [Plan](https://dawner.top/categories/plan/)：~~阶段性计划与安排~~
+- [About Literature](https://dawner.top/categories/about-literature/)：书籍分享
+- [About Tech](https://dawner.top/categories/about-tech/)：我们的生活包括实体和数字，科技和数码也都是由硬件和软件共同作用的
+- [Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟（阶段性的作品可以从本页底部左边的链接进入，page 名称为 “Photography ‘Chalet’”）
+
+- [Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
+- [Thoughts and Senses](https://dawner.top/categories/thoughts-and-senses/)：思绪与感官<sup>New</sup>
+
+- [Year-end Summary](https://dawner.top/categories/year-end-summary/)：所谓的年终总结
+
+---
+
+以下分类将按照「墓碑机制」，暂时置于「后台」🤳。
+
+- [Plan](https://dawner.top/categories/plan/)：阶段性计划与安排
 - [Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古诗，之后会尝试现代诗
 - [Record](https://dawner.top/categories/record/)：记录时间所留下的痕迹
-- [Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
 - [Video](https://dawner.top/categories/video/)：自己的作品以及他者的作品
-- [Year-end Summary](https://dawner.top/categories/year-end-summary/)：所谓的年终总结
 
 ## 致谢
 
@@ -43,7 +51,7 @@ draft: false
 
 ## 找到我
 
-个人主页：[熹微 (bento.me)](https://bento.me/xiwei)
+主页：[bento.me](https://bento.me/xiwei)
 
 邮箱：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)
 
@@ -54,7 +62,7 @@ draft: false
 ## 注意事项
 
 * 文章中所有带有..灰色..下画线的部分均为超链接，点击后会在新标签页中打开。
-* 鼓励你通过上方的邮箱与我取得联系。
+* 鼓励你通过上方的..邮箱..与我取得联系。
 
 
 

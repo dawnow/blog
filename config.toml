@@ -321,7 +321,7 @@ uglyURLs = false
     enableHeader = true
 
      # 是否自动隐藏
-    enableHeaderAutoHide = false
+    enableHeaderAutoHide = true
     # 说明：仅对弹性布局的顶栏有效
 
     # 是否在首页显示
@@ -391,7 +391,7 @@ uglyURLs = false
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = ["「我是躯体，亦是灵魂」", "——孩子这样说道。", "那为什么我们不能像孩子一样讲话呢？"]
+    homePoetry = ["**「我是躯体，亦是灵魂」**", "**——孩子这样说道。**", "**那为什么我们不能像孩子一样讲话呢？**"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
