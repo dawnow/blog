@@ -65,6 +65,73 @@
     transform: translateY(0.4em);
 }
 
+// https://github.com/TypeNetwork/Amstelvar
+
+@font-face {
+    font-family: 'Amstelvar';
+    font-display: swap;
+    src: url('#{$baseRelURL}/fonts/Amstelvar-Roman-VF.woff2') format('woff2-variations'),
+         url('#{$baseRelURL}/fonts/Amstelvar-Roman-VF.woff2') format('woff2');
+    font-weight: 100 900;
+    font-stretch: 50% 125%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Amstelvar';
+    font-display: swap;
+    src: url('#{$baseRelURL}/fonts/Amstelvar-Italic-VF.woff2') format('woff2-variations'),
+         url('#{$baseRelURL}/fonts/Amstelvar-Italic-VF.woff2') format("woff2");
+    font-weight: 100 900;
+    font-stretch: 50% 125%;
+    font-style: italic;
+}
+
+:root {
+    --text-wdth: 90;
+    --text-opsz: 40;
+    --text-YTLC: 460;
+}
+
+body {
+    font-variation-settings:
+        'wdth' var(--text-wdth),
+        'opsz' var(--text-opsz),
+        'YTLC' var(--text-YTLC);
+}
+
+html:lang(en-US) body {
+    font-variation-settings: normal;
+}
+
+article:lang(en-US) p {
+    --font-size: 18px;
+    --line-height: 1.618;
+
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-family: 'Amstelvar', 'Noto Serif SC', serif;
+    font-variation-settings: normal;
+}
+
+article:lang(en-US) .drop-cap {
+    font-size: 3em;
+    margin-right: 16px;
+    margin-top: 15px !important;
+    line-height: calc(var(--font-size) * var(--line-height));
+}
+
+.post-title {
+    font-family: 'glyph-correction', 'Amstelvar', 'Noto Serif SC', serif;
+    font-variation-settings:
+        'wght' 550,
+        'opsz' 60,
+        'YOPQ' 90;
+}
+
+.list-item-time {
+    font-feature-settings: 'tnum';
+}
+
 
 //西文优化
 
@@ -81,29 +148,29 @@ p:lang(en) {
 
 blockquote.quote {
     position: relative;
-    margin: 2em auto;
-    padding-left: 2em;
-    border-left: none;
-    border-top: 1px solid var(--color-contrast-lower);
-    border-bottom: 1px solid var(--color-contrast-lower);
-    p{
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
+    margin: 2em auto !important;
+    padding-left: 3em;
+    color: inherit;
+    border: none;
+    p {
+        text-indent: 0 !important;
     }
     &::before {
         position: absolute;
         left: 0;
         content: '“';
-        color: var(--color-contrast-low);
         font-size: 3em;
         font-weight: bold;
-        margin-top: -0.25em;
+        line-height: 1;
     }
     &.poetry {
         display: table;
         padding: 0;
         &::before {
             left: -1em;
+        }
+        p {
+            margin: 0 0 1em;
         }
         p:last-child {
             margin: 0;
@@ -113,9 +180,13 @@ blockquote.quote {
         p {
             line-height: 1.618;
             text-align: left;
-            hyphens: auto;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
+            font-family: 'Amstelvar', 'Noto Serif SC', serif;
+            font-variation-settings: normal;
+        }
+    }
+    &.italic {
+        p {
+            font-style: italic;
         }
     }
 }

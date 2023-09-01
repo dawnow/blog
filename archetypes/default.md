@@ -4,6 +4,8 @@ date: {{ .Date }}
 tags: []
 categories: []
 slug: ""
+indent: 
+dropCap: 
 draft: true
 ---
 
