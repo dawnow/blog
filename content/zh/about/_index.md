@@ -15,10 +15,11 @@ draft: false
 - [About Film](https://dawner.top/categories/about-film/)：影视作品
 - [About Literature](https://dawner.top/categories/about-literature/)：书籍分享
 - [About Tech](https://dawner.top/categories/about-tech/)：我们的生活包括实体和数字，科技和数码也都是由硬件和软件共同作用的
-- [Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟（阶段性的作品可以从本页底部左边的链接进入，page 名称为 “Photography ‘Chalet’”）
 
 - [Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
 - [Thoughts and Senses](https://dawner.top/categories/thoughts-and-senses/)：思绪与感官<sup>New</sup>
+
+- [Imagined Scenario](https://dawner.top/categories/imagined-scenario/)：想象的场景<sup>New</sup>
 
 - [Year-end Summary](https://dawner.top/categories/year-end-summary/)：所谓的年终总结
 
@@ -30,6 +31,7 @@ draft: false
 - [Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古诗，之后会尝试现代诗
 - [Record](https://dawner.top/categories/record/)：记录时间所留下的痕迹
 - [Video](https://dawner.top/categories/video/)：自己的作品以及他者的作品
+- [Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟（阶段性的作品可以从本页底部左边的链接进入，page 名称为 “Photography ‘Chalet’”）
 
 ## 致谢
 
