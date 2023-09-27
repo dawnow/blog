@@ -4,7 +4,7 @@ date: 2019-11-19T21:42:42+08:00
 draft: false
 ---
 
-你好，这是我的个人博客，在这里我会通过一些简单的「符号」来说明和表达一些东西。
+(｡･∀･)ﾉﾞ嗨，这是我的个人博客，在这里我会通过一些简单的「符号」来说明和表达一些东西。
 
 若您在浏览过程中遇到任何错误（如错别字、标点符号误用、知识性错误等），可以通过邮件告知我，我将感激不尽。
 
@@ -40,7 +40,7 @@ draft: false
 - [Github](https://github.com/)
 - [Netlify](https://app.netlify.com/)
 - [Google Fonts](https://fonts.google.com/)
-- [reuixiy](https://io-oi.me/)
+- [reuixiy](https://io-oi.me/)<sup>Theme Creator</sup>
 - [Unsplash](https://unsplash.com/)
 
 ## 追踪方式
@@ -69,3 +69,6 @@ draft: false
 
 
 ![](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20210527235410.png)
+
+***[Sei du selbst](https://nietzschehaus.ch/de/)***
+
