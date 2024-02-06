@@ -1,6 +1,8 @@
 ---
 title: "About"
 date: 2019-11-19T21:42:42+08:00
+indent: false
+dropCap: false
 draft: false
 ---
 
