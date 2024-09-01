@@ -6,7 +6,7 @@ dropCap: true
 draft: false
 ---
 
-嗨！这是我的个人博客，在这里我会通过一些简单的「符号」来说明和表达一些东西。
+这是我的个人博客，在这里我会通过一些简单的「符号」来说明和表达一些东西。
 
 若您在浏览过程中遇到任何错误（如错别字、标点符号误用、知识性错误等），恳请通过邮件告知我。
 
@@ -27,11 +27,7 @@ draft: false
 
 以下分类将按照「墓碑机制」，暂时置于「后台」🤳。[^2]
 
-- [Plan](https://dawner.top/categories/plan/)：阶段性计划与安排
-- [Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古诗，之后会尝试现代诗
-- [Record](https://dawner.top/categories/record/)：记录时间所留下的痕迹
-- [Video](https://dawner.top/categories/video/)：自己的作品以及他者的作品
-- [Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟
+[Plan](https://dawner.top/categories/plan/)：阶段性计划与安排／[Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古诗，之后会尝试现代诗／[Record](https://dawner.top/categories/record/)：记录时间所留下的痕迹／[Video](https://dawner.top/categories/video/)：自己的作品以及他者的作品／[Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟
 
 ## 致谢名单
 
