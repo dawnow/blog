@@ -421,7 +421,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "这是 Dawn 的个人博客，在这里我会通过一些简单的符号来说明和表达一些东西……"
+    siteDescription = "这是 Dawn 的个人博客，在这里我会通过一些简单的符号来说明和表达一些东西……feedId:62646306651836466+userId:59840182088728576"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
