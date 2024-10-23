@@ -230,14 +230,14 @@ uglyURLs = false
         identifier = "posts"
     [[menu.main]]
         url = "/categories/"
-        name = "分类"
+        name = "類目"
         weight = 2
         pre = "internal"
         post = "border-all"
         identifier = "categories"
     [[menu.main]]
         url = "/about/"
-        name = "关于"
+        name = "關於"
         weight = 3
         pre = "internal"
         post = "address-card"
@@ -291,8 +291,8 @@ uglyURLs = false
         weight = 4
         pre = "external"
     [[menu.socials]]
-        url = "https://alive.bar/@Elephant"
-        name = "Mastodon"
+        url = "https://www.threads.net/@xi__wei?igshid=MzRlODBiNWFlZA=="
+        name = "Threads"
         weight = 5
         pre = "external"
 

@@ -1,18 +1,16 @@
 ---
-title: "About"
+title: "👋"
 date: 2019-11-19T21:42:42+08:00
 indent: false
 dropCap: true
 draft: false
 ---
 
-这是我的个人博客，在这里我会通过一些简单的「符号」来说明和表达一些东西。
-
-若您在浏览过程中遇到任何错误（如错别字、标点符号误用、知识性错误等），恳请通过邮件告知我。
+这是我的个人博客，在这里我会通过一些简单的「符号」来说明和表达一些东西。若您在浏览过程中遇到任何错误（如错别字、标点符号误用、知识性错误等），恳请通过邮件告知我。
 
 ## 文章分类
 
-我目前的文章主要有以下分类（当然 tag 也可以作为筛选的依据），它们分别涉及哪些内容我会在 `：` 后面进行相关阐释。
+我目前的文章主要有以下分类（当然 tag 也可以作为筛选的依据），它们分别涉及哪些内容我会在 `：` 后面进行阐释。
 
 - [About Film](https://dawner.top/categories/about-film/)[^1]：影视作品
 - [About Literature](https://dawner.top/categories/about-literature/)：书籍分享
@@ -38,8 +36,6 @@ draft: false
 ## 追踪方式
 
 通过 [Atom](https://dawner.top/atom.xml) / [RSS](https://dawner.top/rss.xml) 订阅本博客
-
-通过 [邮件](http://eepurl.com/gZ4Djv) 订阅本博客
 
 本博客为一个 [PWA](https://web.dev/progressive-web-apps/) 站点，所以你也可以将本站点添加至你的设备以便随时查看
 
