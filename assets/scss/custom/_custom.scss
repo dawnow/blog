@@ -7,7 +7,7 @@
 }
 
 .list-title, .term-title, .list-year, .list-month {
-    font-family: 'glyph-correction', 'Cinzel Decorative', 'Noto Serif SC', serif;
+    font-family: 'glyph-correction', 'Cinzel Decorative', 'I.MingCP', serif;
 }
 
 .brand {
@@ -78,8 +78,16 @@
     flex-direction: column-reverse;
 }
 
-// https://github.com/TypeNetwork/Amstelvar
+// https://github.com/ichitenfont/I.Ming
+@font-face {
+    font-family: 'I.MingCP';
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/gh/dawnow/blog/static/fonts/I.MingCP-8.10.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
 
+// https://github.com/TypeNetwork/Amstelvar
 @font-face {
     font-family: 'Amstelvar';
     font-display: swap;
@@ -146,17 +154,6 @@ article:lang(en-US) .drop-cap {
 }
 
 
-//西文优化
-
-p:lang(en) {
-    line-height: 1.5; /* 西文字母较小，行距从 1.75 减小至 1.5 */
-  }
-p:lang(en) {
-    hyphens: auto; /* 西文自动断词，包括以下两个 -<vendor>-hyphens 的兼容性选项 */
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-  }
-
 //quote
 
 blockquote.quote {
@@ -193,7 +190,7 @@ blockquote.quote {
         p {
             line-height: 1.618;
             text-align: left;
-            font-family: 'Amstelvar', 'Noto Serif SC', serif;
+            font-family: 'Amstelvar', 'I.MingCP', serif;
             font-variation-settings: normal;
         }
     }
