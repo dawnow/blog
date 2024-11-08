@@ -421,7 +421,7 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "这是 Dawn 的个人博客，在这里我会通过一些简单的符号来说明和表达一些东西……feedId:62646306651836466+userId:59840182088728576"
+    siteDescription = "这是 Dawn 的个人博客，在这里我会通过一些简单的符号来说明和表达一些东西……"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
@@ -772,7 +772,7 @@ uglyURLs = false
     # 注意：只支持 HSL 颜色值
 
     # 文章的内容宽度
-    postWidth = 36
+    postWidth = 34
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -1290,7 +1290,7 @@ uglyURLs = false
     displaySiteCreatedYear = true
 
     # 年份与作者之间的图标，留空（""）则无
-    iconBetweenYearAndAuthor = "user-astronaut"
+    iconBetweenYearAndAuthor = ""
     # 图标颜色
     iconColor = "#939597"
     # 是否开启图标的跳动效果
