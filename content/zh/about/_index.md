@@ -6,57 +6,49 @@ dropCap: true
 draft: false
 ---
 
-这是我的个人博客，在这里我会通过一些简单的「符号」来说明和表达一些东西。若您在浏览过程中遇到任何错误（如错别字、标点符号误用、知识性错误等），恳请通过邮件告知我。
+這是我的個人博客，在這裏我會通過一些簡單的「符號」來説明和表達一些東西。若你在瀏覽過程中遇到任何錯誤（如錯別字、標點符號誤用、知識性錯誤等），懇請通過郵件告知我。
 
-## 文章分类
+## 文章分類
 
-我目前的文章主要有以下分类（当然 tag 也可以作为筛选的依据），它们分别涉及哪些内容我会在 `：` 后面进行阐释。
+我目前的文章主要有以下分類（當然 tag 也可以作為篩選的依據），它們分別涉及哪些內容我會在 `：` 後面進行闡釋。
 
-- [About Film](https://dawner.top/categories/about-film/)[^1]：影视作品
-- [About Literature](https://dawner.top/categories/about-literature/)：书籍分享
-- [About Tech](https://dawner.top/categories/about-tech/)：我们的生活包括实体和数字，科技和数码也都是由硬件和软件共同作用的
+- [Tech](https://dawner.top/categories/tech/)：數字生活
+- [Life](https://dawner.top/categories/life/)：動物生活
+- [Say Something](https://dawner.top/categories/say-something/)：有感而發
+- [Thoughts and Senses](https://dawner.top/categories/thoughts-and-senses/)：思緒與感官<sup>New</sup>
+- [Imagined Scenario](https://dawner.top/categories/imagined-scenario/)：想象的場景<sup>New</sup>
+- [Record](https://dawner.top/categories/record/)：以年為單位的隨機記錄
+- [Year-end Summary](https://dawner.top/categories/year-end-summary/)：所謂的年終總結
 
-- [Say Something](https://dawner.top/categories/say-something/)：对于个人、社会的一些有感而发
-- [Thoughts and Senses](https://dawner.top/categories/thoughts-and-senses/)：思绪与感官<sup>New</sup>
+以下分類將按照「墓碑機制」，暫時置於「後台」🤳。[^1]
 
-- [Imagined Scenario](https://dawner.top/categories/imagined-scenario/)：想象的场景<sup>New</sup>
+[Film](https://dawner.top/categories/film/)[^2]：影視作品分享／[Reading](https://dawner.top/categories/reading/)：書籍分享／[Plan](https://dawner.top/categories/plan/)：階段性計劃與安排／[Poetry](https://dawner.top/categories/poetry/)：詩作，目前僅有古詩，之後會嘗試現代詩（二〇二五年开始写了……）／[Video](https://dawner.top/categories/video/)：自己的作品以及他者的剪輯作品／[Freezing Time](https://dawner.top/categories/freezing-time/)：光的繪圖，攝影作品與感悟
 
-- [Year-end Summary](https://dawner.top/categories/year-end-summary/)：所谓的年终总结
+## 致謝名單
 
-以下分类将按照「墓碑机制」，暂时置于「后台」🤳。[^2]
+- [Hugo](https://gohugo.io/)／[Meme](https://themes.gohugo.io/hugo-theme-meme/)／[Github](https://github.com/)／[Netlify](https://app.netlify.com/)／[Google Fonts](https://fonts.google.com/)／[Unsplash](https://unsplash.com/)
 
-[Plan](https://dawner.top/categories/plan/)：阶段性计划与安排／[Poetry](https://dawner.top/categories/poetry/)：诗作，目前仅有古诗，之后会尝试现代诗／[Record](https://dawner.top/categories/record/)：记录时间所留下的痕迹／[Video](https://dawner.top/categories/video/)：自己的作品以及他者的作品／[Freezing Time](https://dawner.top/categories/freezing-time/)：光的绘图，摄影作品与感悟
+- [reuixiy](https://io-oi.me/)Theme Creator
 
-## 致谢名单
+## 追蹤方式
 
-[Hugo](https://gohugo.io/)／[Meme](https://themes.gohugo.io/hugo-theme-meme/)／[Github](https://github.com/)／[Netlify](https://app.netlify.com/)／[Google Fonts](https://fonts.google.com/)／[Unsplash](https://unsplash.com/)
+通過 [Atom](https://dawner.top/atom.xml) / [RSS](https://dawner.top/rss.xml) 訂閲本博客
 
-[reuixiy](https://io-oi.me/)<sup>Theme Creator</sup>
+本博客為一個 [PWA](https://web.dev/progressive-web-apps/) 站點，所以你也可以將本站點添加至你的設備以便隨時查看
 
-## 追踪方式
+## 聯繫方式
 
-通过 [Atom](https://dawner.top/atom.xml) / [RSS](https://dawner.top/rss.xml) 订阅本博客
+郵箱：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)[^3]
 
-本博客为一个 [PWA](https://web.dev/progressive-web-apps/) 站点，所以你也可以将本站点添加至你的设备以便随时查看
+## 許可協議
 
-## 联系方式
-
-邮箱：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)[^3]
-
-##  许可协议
-
-若无特殊声明，本站所有文章均按照 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/) 发布。
+若無特殊聲明，本站所有文章均按照 [CC BY-SA 4.0 協議](https://creativecommons.org/licenses/by-sa/4.0/) 發佈。
 
 ![](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20210527235410.png)
 
-***[Sei du selbst](https://nietzschehaus.ch/de/)***[^4]
+**[Sei du selbst](https://nietzschehaus.ch/de/)**[^4]
 
-
-
-[^1]: 文章中所有带有..灰色..下画线的部分均为超链接，点击后会在新标签页中打开。
-[^2]: 意味着「墓碑机制」下的分类暂时不会更新。
-[^3]: 鼓励你通过这里的邮箱与我取得联系，而非 IM 的方式。
-[^4]:超链接指向「尼采之家」官网
-
-
-
+[^1]: 這意味着「墓碑機制」下的分類..暫時..不會更新。
+[^2]: 文章中所有帶有..灰色..下畫線的部分均為超鏈接，點擊後會在新標籤頁中打開。
+[^3]: 鼓勵你通過這裏的郵箱與我取得聯繫，而非 IM 的方式。
+[^4]: 此處超鏈接指向「尼采之家」官網
