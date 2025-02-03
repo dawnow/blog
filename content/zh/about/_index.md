@@ -27,8 +27,7 @@ draft: false
 ## 致謝名單
 
 - [Hugo](https://gohugo.io/)／[Meme](https://themes.gohugo.io/hugo-theme-meme/)／[Github](https://github.com/)／[Netlify](https://app.netlify.com/)／[Google Fonts](https://fonts.google.com/)／[Unsplash](https://unsplash.com/)
-
-- [reuixiy](https://io-oi.me/)Theme Creator
+- [reuixiy](https://io-oi.me/)<sup>Theme Creator</sup>
 
 ## 追蹤方式
 
