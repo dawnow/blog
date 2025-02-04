@@ -22,7 +22,7 @@ draft: false
 
 以下分類將按照「墓碑機制」，暫時置於「後台」🤳。[^1]
 
-[Film](https://dawner.top/categories/film/)[^2]：影視作品分享／[Reading](https://dawner.top/categories/reading/)：書籍分享／[Plan](https://dawner.top/categories/plan/)：階段性計劃與安排／[Poetry](https://dawner.top/categories/poetry/)：詩作，目前僅有古詩，之後會嘗試現代詩（二〇二五年开始写了……）／[Video](https://dawner.top/categories/video/)：自己的作品以及他者的剪輯作品／[Freezing Time](https://dawner.top/categories/freezing-time/)：光的繪圖，攝影作品與感悟
+[Film](https://dawner.top/categories/film/)[^2]：影視作品分享／[Reading](https://dawner.top/categories/reading/)：書籍分享／[Plan](https://dawner.top/categories/plan/)：階段性計劃與安排／[Poetry](https://dawner.top/categories/poetry/)：詩作，目前僅有古詩，之後會嘗試現代詩（二〇二五伊始，我開始寫詩了……）／[Video](https://dawner.top/categories/video/)：自己的作品以及他者的剪輯作品／[Freezing Time](https://dawner.top/categories/freezing-time/)：光的繪圖，攝影作品與感悟
 
 ## 致謝名單
 
@@ -43,7 +43,7 @@ draft: false
 
 若無特殊聲明，本站所有文章均按照 [CC BY-SA 4.0 協議](https://creativecommons.org/licenses/by-sa/4.0/) 發佈。
 
-![](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/20210527235410.png)
+![](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/202502041458675.png)
 
 **[Sei du selbst](https://nietzschehaus.ch/de/)**[^4]
 
