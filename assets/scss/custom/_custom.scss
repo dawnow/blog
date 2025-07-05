@@ -6,8 +6,22 @@
     margin-top: 4em !important;
 }
 
-.list-title, .term-title, .list-year, .list-month {
+.emphasis-point {
+    font-family: 'I.MingCP', serif;
+}
+em {
+    font-family: 'Amstelvar', serif;
+    font-variation-settings: 'wght' 280;
+}
+* {
+    font-feature-settings: 'halt';
+}
+
+.list-title, .term-title, .list-year, .list-month, [data-type="about"] .post-title {
     font-family: 'glyph-correction', 'Cinzel Decorative', 'I.MingCP', serif;
+}
+.list-item-time {
+    font-feature-settings: 'tnum';
 }
 
 .brand {
