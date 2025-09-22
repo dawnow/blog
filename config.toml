@@ -3,8 +3,9 @@
 
 baseURL = "https://dawner.top/"
 title = "Dawner"
-languageCode = "zh-CN"
+languageCode = "zh-hant"
 hasCJKLanguage = true
+
 # 版权信息（支持 Markdown）
 copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)"
 
@@ -15,7 +16,7 @@ theme = "meme"
 newContentEditor = ""
 
 # i18n
-defaultContentLanguage = "zh"
+defaultContentLanguage = "zh-hant"
 defaultContentLanguageInSubdir = false
 
 # 是否复数化列表页面的标题
@@ -25,7 +26,7 @@ pluralizeListTitles = false
 summaryLength = 42
 
 # 是否开启 GitHub 风格的 Emoji 书写方式
-enableEmoji = true
+enableEmoji = false
 
 # 脚注的返回链接中的文本
 footnoteReturnLinkContents = "↩"
@@ -100,7 +101,7 @@ uglyURLs = false
     # 邮箱
     email = "jmugeekchen7one@gmail.com"
     # 座右铭或简介
-    motto = "Powerful Mind in Strong Body"
+    motto = "oops"
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
@@ -291,7 +292,7 @@ uglyURLs = false
         weight = 4
         pre = "external"
     [[menu.socials]]
-        url = "https://www.threads.net/@xi__wei?igshid=MzRlODBiNWFlZA=="
+        url = "https://www.threads.com/@aiai.tingyun"
         name = "Threads"
         weight = 5
         pre = "external"
@@ -986,7 +987,7 @@ uglyURLs = false
     #      SVG，则可留空（""）品牌栏字体。
 
     # 品牌栏
-    fontFamilySiteBrand = ""
+    fontFamilySiteBrand = "'Noto Serif TC', 'Noto Serif SC', serif"
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
@@ -1481,10 +1482,12 @@ uglyURLs = false
 # 自行添加的多语言站点配置
 
 # 中文
-[languages.zh]
-    languageName = "🇨🇳"
+[languages.zh-hant]
+    languageName = "中文"
     contentDir = "content/zh"
     weight = 1
+[languages.zh-hant.params]
+    contentDir = "content/zh"
 
 
 # 英文

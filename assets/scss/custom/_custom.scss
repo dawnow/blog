@@ -5,13 +5,20 @@
 .post-body {
     margin-top: 4em !important;
 }
-
-.emphasis-point {
-    font-family: 'I.MingCP', serif;
-}
 em {
     font-family: 'Amstelvar', serif;
     font-variation-settings: 'wght' 280;
+}
+.emphasis-point {
+    font-family: $fontFamilyBody;
+}
+.safari-only {
+    /* Safari-only fixes */
+    .emphasis-point {
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        text-underline-offset: 0.25em;
+    }
 }
 * {
     font-feature-settings: 'halt';
