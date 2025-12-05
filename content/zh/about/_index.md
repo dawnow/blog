@@ -31,7 +31,7 @@ draft: false
 
 ## 追蹤方式
 
-通過 [Atom](https://dawner.top/atom.xml) / [RSS](https://dawner.top/rss.xml) 訂閲本博客，或是直接在 [Folo](https://folo.is/) 的發現頁面直接搜索「Dawner」，選擇有**認證**的那個。
+通過 [Atom](https://dawner.top/atom.xml) / [RSS](https://dawner.top/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「Dawner」，選擇有**認證**的那個。
 
 本博客為一個 [PWA](https://web.dev/progressive-web-apps/) 站點，所以你也可以將本站點添加至你的設備以便隨時查看
 
