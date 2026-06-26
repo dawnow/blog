@@ -1,5 +1,5 @@
 ---
-title: "Not about me"
+title: "About"
 date: 2019-11-19T21:42:42+08:00
 indent: false
 dropCap: true
@@ -20,9 +20,9 @@ draft: false
 - [Record](https://dawner.top/categories/record/)：以年為單位的隨機記錄
 - [Year-end Summary](https://dawner.top/categories/year-end-summary/)：所謂的年終總結
 
-以下分類將按照「墓碑機制」，暫時置於「後台」。[^1]
+以下分類將按照「墓碑機制」，暫時静止。[^1]
 
-[Film](https://dawner.top/categories/film/)[^2]：影視作品分享／[Reading](https://dawner.top/categories/reading/)：書籍分享／[Plan](https://dawner.top/categories/plan/)：階段性計劃與安排／[Poetry](https://dawner.top/categories/poetry/)：詩作，目前僅有古詩，之後會嘗試現代詩（二〇二五伊始，我開始寫詩了……）／[Video](https://dawner.top/categories/video/)：自己的作品以及他者的剪輯作品／[Freezing Time](https://dawner.top/categories/freezing-time/)：光的繪圖，攝影作品與感悟
+[Film](https://dawner.top/categories/film/)[^2]：影視作品分享／[Reading](https://dawner.top/categories/reading/)：書籍分享／[Plan](https://dawner.top/categories/plan/)：階段性計劃與安排／[Poetry](https://dawner.top/categories/poetry/)：詩作，目前僅有古詩，之後會嘗試現代詩（二〇二五伊始，我開始寫现代詩了……但至今未曾公开）／[Video](https://dawner.top/categories/video/)：自己的作品以及他者的剪輯作品／[Freezing Time](https://dawner.top/categories/freezing-time/)：光的繪圖，攝影作品與感悟
 
 ## 致謝名單
 
@@ -31,7 +31,7 @@ draft: false
 
 ## 追蹤方式
 
-通過 [Atom](https://dawner.top/atom.xml) / [RSS](https://dawner.top/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「Dawner」，選擇有**認證**的那個。
+通過 [Atom](https://dawner.space/atom.xml) / [RSS](https://dawner.space/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「Dawner」，選擇有**認證**的那個。
 
 本博客為一個 [PWA](https://web.dev/progressive-web-apps/) 站點，所以你也可以將本站點添加至你的設備以便隨時查看
 

@@ -1,7 +1,7 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://dawner.top/"
+baseURL = "https://dawner.space/"
 title = "Dawner"
 languageCode = "zh-hant"
 hasCJKLanguage = true
@@ -105,7 +105,7 @@ uglyURLs = false
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://dawner.top/"
+    website = "https://dawner.space/"
     # 推特
     twitter = "Xi__Wei"
 
@@ -253,7 +253,7 @@ uglyURLs = false
         # weight = 8
         # identifier = "search"
         # post = "search"
-        
+
 
     ## 首页的底部链接
     # [[menu.home]]
@@ -262,7 +262,7 @@ uglyURLs = false
     #     pre = "internal"
     #     post = "list-alt"
     #     identifier = "archive"
-    
+
     # [[menu.home]]
     #     url = "/about/"
     #     weight = 2
@@ -1420,7 +1420,7 @@ uglyURLs = false
     # 说明：需要开启 `Algolia` 的输出，且需要每
     #      次将生成的 algolia.json 文件上传到
     #      Algolia
-    
+
     enableAlgoliaSearch = false
 
     algoliaAppId = ""
@@ -1477,7 +1477,7 @@ uglyURLs = false
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
         busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         utterances = "https://utteranc.es/client.js"
-    
+
 ##########################################
 # 自行添加的多语言站点配置
 
@@ -1508,7 +1508,7 @@ uglyURLs = false
         weight = 1
         pre = "internal"
         post = "list-alt"
-        identifier = "archive"    
+        identifier = "archive"
     [[languages.en.menu.main]]
         url = "/en/about/"
         name = "About"
