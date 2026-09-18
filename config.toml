@@ -47,7 +47,7 @@ uglyURLs = false
 
 # URL 结构
 [permalinks]
-    categories = "/categories/:slug/"
+    # categories = "/categories/:slug/"
     tags = "/tags/:slug/"
 
 # 类别
@@ -351,7 +351,7 @@ uglyURLs = false
     # 如果否，则会使用你的站点标题作为默认值，并
     # 以文字的形式显示，下方可配置字号和字色。字
     # 体请到底部的字体部分配置。单位：em。
-    siteBrandFontSize = 2
+    siteBrandFontSize = 1.5
     siteBrandFontColor = "var(--color-contrast-high)"
 
 
@@ -386,7 +386,7 @@ uglyURLs = false
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = ["曾經有過一個星球", "它上面的聰明的動物發明了認識", "這是「世界歷史」的最為妄自尊大和矯揉造作的一刻", "但也僅僅是一刻而已", "在自然做了幾次呼吸之後", "星球開始冷卻凍結", "聰明的動物只好死掉"]
+    homePoetry = ["曾經有過一個星球", "它上面的聰明的動物發明了認識", "這是「世界歷史」上最為", "妄自尊大和矯揉造作的「一刻」", "但也僅僅是一刻而已", "在自然做了幾次呼吸之後", "星球開始冷卻凍結", "聰明的動物只好死掉"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 
@@ -482,7 +482,7 @@ uglyURLs = false
     # 列表页面
 
     # 宽度
-    listWidth = 34
+    listWidth = 36
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
