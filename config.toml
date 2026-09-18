@@ -2,7 +2,7 @@
 # 站点配置
 
 baseURL = "https://thethinningdark.com/"
-title = "Dawner"
+title = "the thinning dark"
 locale = "zh-hant"
 hasCJKLanguage = true
 
@@ -270,22 +270,22 @@ uglyURLs = false
         # weight = 1
         # pre = "external"
     # [[menu.socials]]
-        # url = "https://twitter.com/DawnWooow"
+        # url = "https://twitter.com/thethethinningdark"
         # name = "Twitter"
         # weight = 2
         # pre = "external"
     # [[menu.socials]]
-        # url = "https://www.instagram.com/dawnwooow/"
+        # url = "https://www.instagram.com/thethethinningdark/"
         # name = "Instagram"
         # weight = 3
         # pre = "external"
     [[menu.socials]]
-        url = "https://www.notion.so/imdawn/Dawn-s-Warehouse-f16d22567aa04496b4e8aa2a2df9ff58"
+        url = "https://app.notion.com/p/imdawn/Dawn-s-Warehouse-f16d22567aa04496b4e8aa2a2df9ff58?source=copy_link"
         name = "Warehouse"
         weight = 4
         pre = "external"
     [[menu.socials]]
-        url = "https://www.threads.com/@aiai.tingyun"
+        url = "https://www.threads.com/@thethethinningdark"
         name = "Threads"
         weight = 5
         pre = "external"
@@ -296,11 +296,7 @@ uglyURLs = false
         name = "Home"
         weight = 1
         pre = "internal"
-    [[menu.links]]
-        url = "/categories/"
-        name = "Categories"
-        weight = 2
-        pre = "internal"
+
     [[menu.links]]
         url = "/tags/"
         name = "Tags"
@@ -1518,12 +1514,12 @@ uglyURLs = false
 
 
     [[languages.en.menu.socials]]
-        url = "https://twitter.com/DawnWooow"
+        url = "https://twitter.com/thethethinningdark"
         name = "Twitter"
         weight = 2
         pre = "external"
     [[languages.en.menu.socials]]
-        url = "https://www.instagram.com/dawnwooow/"
+        url = "https://www.instagram.com/thethinningdark/"
         name = "Instagram"
         weight = 3
         pre = "external"

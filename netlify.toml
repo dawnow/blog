@@ -20,3 +20,9 @@
     to = "https://thethinningdark.com/:splat"
     status = 301
     force = true
+
+  [[redirects]]
+    from = "https://dawner.netlify.com/*"
+    to = "https://thethinningdark.com/:splat"
+    status = 301
+    force = true
