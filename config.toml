@@ -1,9 +1,9 @@
 ##########################################
 # 站点配置
 
-baseURL = "https://dawner.space/"
+baseURL = "https://thethinningdark.com/"
 title = "Dawner"
-languageCode = "zh-hant"
+locale = "zh-hant"
 hasCJKLanguage = true
 
 # 版权信息（支持 Markdown）
@@ -52,7 +52,7 @@ uglyURLs = false
 
 # 类别
 [taxonomies]
-    category = "categories"
+    # category = "categories"
     tag = "tags"
 
 # 修改时间
@@ -105,7 +105,7 @@ uglyURLs = false
     # 头像
     avatar = "/icons/apple-touch-icon.png"
     # 网站（默认值：baseURL）
-    website = "https://dawner.space/"
+    website = "https:/thethinningdark.com/"
     # 推特
     twitter = "thethinningdark"
 
@@ -157,9 +157,9 @@ uglyURLs = false
     home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex"]
     section = ["HTML"]
     # 类别
-    taxonomyTerm = ["HTML"]
-    # 类别项
     taxonomy = ["HTML"]
+    # 类别项
+    term = ["HTML"]
     # 说明：https://github.com/gohugoio/hugo/issues/4528#issuecomment-508488859
 
 # RSS & Atom 文章数限制
@@ -229,13 +229,6 @@ uglyURLs = false
         pre = "internal"
         post = "list-alt"
         identifier = "posts"
-    [[menu.main]]
-        url = "/categories/"
-        name = "類目"
-        weight = 2
-        pre = "internal"
-        post = "border-all"
-        identifier = "categories"
     [[menu.main]]
         url = "/about/"
         name = "關於"
@@ -452,9 +445,9 @@ uglyURLs = false
     # 的树状分类，故如需保留树状分类，建议适应
     # Hugo 的设计理念——分区。
 
-    categoryBy = "categories"
+    categoryBy = "sections"
     # 注意：如果你设置为 `sections`，请务必将
-    #      此配置文件中的类别（taxonomies）中
+    #      此配置文件中的类别（f）中
     #      的 `categories` 删除，不然分类页
     #      面会失效。同时，你还需要自己新建一个
     #      `content/categories/_index.md`
@@ -1483,7 +1476,7 @@ uglyURLs = false
 
 # 中文
 [languages.zh-hant]
-    languageName = "中文"
+    label = "中文"
     contentDir = "content/zh"
     weight = 1
 [languages.zh-hant.params]
@@ -1492,10 +1485,10 @@ uglyURLs = false
 
 # 英文
 [languages.en]
-    languageName = "🇺🇸"
+    label = "🇺🇸"
     contentDir = "content/en"
     weight = 2
-    languageCode = "en-US"
+    locale = "en-US"
     hasCJKLanguage = false
     copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
 [languages.en.taxonomies]

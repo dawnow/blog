@@ -1,7 +1,6 @@
 ---
 title: "About"
 date: 2019-11-22T11:27:40+08:00
-categories: []
 tags: []
 ---
 
