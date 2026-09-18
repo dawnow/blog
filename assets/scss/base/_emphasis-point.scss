@@ -1,0 +1,11 @@
+.emphasis-point {
+    font-style: normal;
+   
+    -webkit-text-emphasis: '‧';
+    -moz-text-emphasis: '‧';
+    text-emphasis: '‧'; /* U+2027 */
+
+    -webkit-text-emphasis-position: under;
+    -moz-text-emphasis-position: under;
+    text-emphasis-position: under;
+}

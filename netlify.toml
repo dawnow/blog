@@ -3,11 +3,20 @@
   command = "npm run build"
 
 [build.environment]
-  HUGO_VERSION = "0.125.4"
+  HUGO_VERSION = "0.166.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
-[[redirects]]
-  from = "https://dawner.netlify.com/*"
-  to = "https://dawner.top/:splat"
-  force = true
+  # dawner.space → thethinningdark.com
+  # 有效期至 2026-10-23，到期后自动失效，届时可删除本段
+  [[redirects]]
+    from = "https://dawner.space/*"
+    to = "https://thethinningdark.com/:splat"
+    status = 301
+    force = true
+
+  [[redirects]]
+    from = "https://www.dawner.space/*"
+    to = "https://thethinningdark.com/:splat"
+    status = 301
+    force = true
