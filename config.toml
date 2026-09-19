@@ -230,11 +230,18 @@ uglyURLs = false
         post = "list-alt"
         identifier = "posts"
     [[menu.main]]
+        url = "/now/"
+        name = "當下"
+        weight = 2
+        pre = "internal"
+        post = "clock"
+        identifier = "now"
+    [[menu.main]]
         url = "/about/"
         name = "關於"
         weight = 3
         pre = "internal"
-        post = "address-card"
+        post = "info"
         identifier = "about"
     [[menu.main]]
         weight = 6

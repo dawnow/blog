@@ -24,7 +24,7 @@ em {
     font-feature-settings: 'halt';
 }
 
-.list-title, .term-title, .list-year, .list-month, [data-type="about"] .post-title {
+.list-title, .term-title, .list-year, .list-month, [data-type="about"] .post-title, [data-type="now"] .post-title {
     font-family: 'glyph-correction', 'Cinzel Decorative', 'I.MingCP', serif;
 }
 .list-item-time {
@@ -47,7 +47,7 @@ em {
 }
 
 .menu-item {
-    .posts, .categories, .about {
+    .posts, .categories, .now, .about {
         display: none;
     }
 }
@@ -66,11 +66,11 @@ em {
         margin: 2em 0;
     }
     .menu-item {
-        .posts, .categories, .about {
+        .posts, .categories, .now, .about {
             display: inline-block;
         }
     }
-    
+
     :root {
         .theme-icon-light {
             display: inline;
