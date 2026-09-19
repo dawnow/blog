@@ -6,13 +6,7 @@ dropCap: false
 draft: false
 ---
 
-## @now
-
-本博客目前最新的域名為 `thethinningdark.com`，之前的域名 `dawner.space` 將會在 2026 年 10 月 23 日到期，屆時無法再通過其打開本站點。
-
----
-
-這是我的個人博客，在這裏我會通過一些簡單的「符號」來説明和表達一些東西。若你在瀏覽過程中遇到任何錯誤（如錯別字、標點符號誤用、知識性錯誤等），懇請通過郵件告知我。
+這是我的個人博客，在這裏我會通過一些簡單的「符號」來説明和表達一些東西。若你在瀏覽過程中遇到任何錯誤（如錯別字、標點符號誤用、知識性錯誤等），懇請通過電郵告知我。
 
 ## 致謝
 
@@ -21,11 +15,11 @@ draft: false
 
 ## 追蹤
 
-通過 [Atom](https://thethinningdark.com/atom.xml) / [RSS](https://thethinningdark.com/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「Dawner」。[^1]
+通過 [Atom](https://thethinningdark.com/atom.xml) / [RSS](https://thethinningdark.com/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「the thinning dark」[^1]。
 
 本博客為一個 [PWA](https://web.dev/progressive-web-apps/) 站點，所以你也可以將本站點添加至你的設備以便隨時查看
 
-## 聯繫
+## 聯絡
 
 電郵：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)[^2]
 
