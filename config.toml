@@ -292,7 +292,7 @@ uglyURLs = false
         weight = 4
         pre = "external"
     [[menu.socials]]
-        url = "https://www.threads.com/@thethethinningdark"
+        url = "https://www.threads.com/@thethinningdark"
         name = "Threads"
         weight = 5
         pre = "external"
