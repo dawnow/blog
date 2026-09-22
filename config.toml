@@ -231,7 +231,7 @@ uglyURLs = false
         identifier = "posts"
     [[menu.main]]
         url = "/now/"
-        name = "當下"
+        name = "近況"
         weight = 2
         pre = "internal"
         post = "clock"
@@ -769,7 +769,7 @@ uglyURLs = false
     # 注意：只支持 HSL 颜色值
 
     # 文章的内容宽度
-    postWidth = 34
+    postWidth = 36
     # 说明：如果留空（""），则用 42 作为默认值
     #      单位：em
 
@@ -1536,7 +1536,7 @@ uglyURLs = false
     homePoetry = ["The universe is symmetrical", "In a parallel universe, you want to be coexists with you", "In an environment of constant change", "Only the brave and free soul, the curiosity of exploration", "It's what makes the world more interesting"]
     siteDescription = "Dawn's Blog in English."
     listDateFormat = "January 2"
-    postWidth = 42
+    postWidth = 36
     fontFamilyTitle = ""
     fontFamilyHeadings = ""
     fontFamilyBody = "'Amiri', serif"
