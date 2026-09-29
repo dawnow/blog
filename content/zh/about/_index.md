@@ -6,7 +6,7 @@ dropCap: false
 draft: false
 ---
 
-這是我的個人博客，在這裏我會通過一些簡單的「符號」來説明和表達一些東西。若你在瀏覽過程中遇到任何錯誤（如錯別字、標點符號誤用、知識性錯誤等），懇請通過電郵告知我。
+這是我的個人博客，在這裏我會通過一些簡單的「符號」來説明和表達一些東西。若你在瀏覽過程中遇到任何錯誤[^1]（如錯別字、標點符號誤用、知識性錯誤等），懇請通過電郵告知我。
 
 ## 致謝
 
@@ -15,13 +15,13 @@ draft: false
 
 ## 追蹤
 
-通過 [Atom](https://thethinningdark.com/atom.xml) / [RSS](https://thethinningdark.com/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「the thinning dark」[^1]。
+通過 [Atom](https://thethinningdark.com/atom.xml) / [RSS](https://thethinningdark.com/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「the thinning dark」[^2]。
 
 本博客為一個 [PWA](https://web.dev/progressive-web-apps/) 站點，所以你也可以將本站點添加至你的設備以便隨時查看
 
 ## 聯絡
 
-電郵：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)[^2]
+電郵：[jmugeekchen7one@gmail.com](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=jmugeekchen7one@gmail.com)[^3]
 
 ## 許可
 
@@ -29,6 +29,7 @@ draft: false
 
 ![](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/202502041458675.png)
 
-[^1]: 可能會因爲更換域名而出現多個訂閲源，請確認最新文章是否與本博客保持一致。 
-[^2]: 鼓勵你通過這裏的郵箱與我取得聯繫，而非 IM 的方式。
+[^1]: 所有文章均未使用 AI。
+[^2]: 可能會因爲更換域名而出現多個訂閲源，請確認最新文章是否與本博客保持一致。
+[^3]: 鼓勵你通過這裏的郵箱與我取得聯繫，而非 IM 的方式。
 

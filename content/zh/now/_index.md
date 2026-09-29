@@ -1,6 +1,14 @@
 ---
 title: "Now"
 ---
+2026 年 9 月 29 日
+
+- 前些天我和 [Derek](https://sive.rs/) 通過郵件溝通之後，當然，我跟他發郵件的主要目的是請求將我自己的主頁加入到 [nownownow.com](https://nownownow.com/)，因爲他是這個網站的創始人，發第一封郵件之後 他很熱情地回了兩封 其中一封是讓我填寫相關信息的；另外一封是對我有所好奇，因爲我其中提到一個人叫 [Owen](https://www.owenyoung.com/now)，他去年在中國深圳和 Owen 見過面 後來我去看他博客的內容時 發現他去年在中國旅遊，走過了很多地方。他對我的名字很感興趣，所以我又發了一封郵件，講述了我名字的故事。 我看了幾篇他 [blog](https://sive.rs/sakamoto) 當中的文章，才發現他在很早的時候做過[阪本龍一](https://zh.wikipedia.org/wiki/坂本龍一)的吉他手。我還在 YouTube 上找了[對應的視頻](https://www.youtube.com/watch?v=szTt9ImqscI&t=4190s&pp=ygUacnl1aWNoaSBzYWthbW90byBsaXZlIDE5OTI%3D)來看，彷彿回到了阪本龍一老師年輕的時候，我也一直在注意當時還留着長髮的 Derek，我也一直在注意當時還留着長髮的 Derek。
+- 看了一下今年截至目前的觀影記錄，我發現已經看了 70 多部影片。這裏面有一些是短片，還有一些是正常時長的大概兩個小時左右的電影。我的觀影記錄依然藉助 Notion 和一個 [Chromium 擴展程序](https://chromewebstore.google.com/detail/cephkdcfcpdppcdjdhfnmphkoenpkhna?utm_source=item-share-cb)，配合豆瓣的數據來進行記錄的。
+- 最近購置了一隻[第三方的 50mm 定焦鏡頭](https://www.viltrox.com.cn/productinfo/6432683.html)（便宜貨），也是時候進行一些嚴肅的攝影創作了。我個人很喜歡使用定焦鏡頭。而且我今天在地鐵上的時候還在想，一個焦段其實就代表了一種視角。你以某種視角去觀察同樣的場景和人物的時候，給人的感受應該也是不一樣的。我們應該嘗試多元的視角，也應該嘗試多種焦段的鏡頭。
+
+---
+
 2026 年 9 月 19 日
 
 - 🚧本博客目前最新的域名為 `thethinningdark.com`，之前的域名 `dawner.space` 將會在 `2026 年 10 月 23` 日到期，屆時無法再通過其打開本博客。
