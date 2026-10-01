@@ -3,7 +3,7 @@
         <div class="main-inner">
 
             {{/* 顶部：正文，脱离 .list 影响，保留列表样式 */}}
-            <article class="content post h-entry" data-type="now">
+            <article class="content post h-entry now-index" data-type="now">
                 <h1 class="post-title p-name">{{ .Title }}</h1>
                 <div class="post-body e-content">
                     {{ .Content }}
@@ -13,7 +13,7 @@
             {{/* 底部：归档列表，用 .list 让主题的归档样式生效 */}}
             {{ with .Pages }}
                 <div class="content list">
-                    <h2 class="list-title">归档</h2>
+                    <h2 class="list-title">bygone</h2>
                     {{ range .ByDate.Reverse }}
                         <div class="list-item">
                             <a class="list-item-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
