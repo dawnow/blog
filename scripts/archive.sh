@@ -3,7 +3,7 @@
 # 归档 _index.md 的正文，文件名和标题都用「年+月」格式
 
 set -e
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/../content/zh/now"
 
 # ---------- 中文/阿拉伯数字转换 ----------
 
