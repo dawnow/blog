@@ -323,7 +323,7 @@ uglyURLs = false
     enableHeader = true
 
      # 是否自动隐藏
-    enableHeaderAutoHide = false
+    enableHeaderAutoHide = true
     # 说明：仅对弹性布局的顶栏有效
 
     # 是否在首页显示
@@ -393,7 +393,7 @@ uglyURLs = false
 
     ## 「诗意人生」
     # 诗句，支持 Markdown
-    homePoetry = ["曾經有過一個星球", "它上面的聰明的動物發明了認識", "這是「世界歷史」上最為", "妄自尊大和矯揉造作的「一刻」", "但也僅僅是一刻而已", "在自然做了幾次呼吸之後", "星球開始冷卻凍結", "聰明的動物只好死掉"]
+    homePoetry = ["曾經有過一個星球", "它上面的聰明的動物發明了認識", "……", "在自然做了幾次呼吸之後", "星球開始冷卻凍結", "聰明的動物只好死掉"]
     # 底部链接的内间距，单位：em
     homeLinksPadding = 1
 

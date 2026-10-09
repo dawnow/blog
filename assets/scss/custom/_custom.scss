@@ -24,6 +24,16 @@ em {
     font-feature-settings: 'halt';
 }
 
+/* 移動端菜單遮罩：改為獨立全屏層，修復 iOS Safari 磨砂不鋪滿 */
+.header.open .nav-curtain,
+.header.fade .nav-curtain {
+    position: fixed;
+    inset: 0;
+    height: 100dvh;
+    z-index: -1;
+}
+
+
 .list-title, .term-title, .list-year, .list-month, [data-type="about"] .post-title, .now-index .post-title {
     font-family: 'glyph-correction', 'Cinzel Decorative', 'I.MingCP', serif;
 }
@@ -39,7 +49,6 @@ em {
 
 .nav {
     font-size: 1em;
-    margin-top: 0.4em;
 }
 
 .home .poetry {
