@@ -27,7 +27,7 @@ draft: false
 
 若無特殊聲明，本站所有文章均按照 [CC BY-SA 4.0 協議](https://creativecommons.org/licenses/by-sa/4.0/) 發佈。
 
-![](https://dawnblog-1300625500.cos.ap-guangzhou.myqcloud.com/images/202502041458675.png)
+![](https://img.thethinningdark.com/images/202502041458675.png)
 
 [^1]: 所有文章均未使用 AI，如有引用 AI 生成內容，會進行說明。
 
