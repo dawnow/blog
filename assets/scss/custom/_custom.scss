@@ -74,9 +74,23 @@ em {
         margin: 2em 0;
     }
     .nav-curtain {
-        // iOS Safari 底栏模式：100vh 取大视口导致底部空隙，改用动态视口
-        height: 100vh;   // 回退：不认识 dvh 的浏览器忽略下一行
-        height: 100dvh;  // 跟着标签栏显隐实时取可视高度
+        // 视口定位：不再依赖任何 vh 单位；
+        // 四边向外扩 20px（超过 backdrop-filter 的模糊半径），让边缘伪影落在可视区外
+        position: fixed;
+        top: -20px;
+        left: -20px;
+        right: -20px;
+        bottom: -20px;
+        z-index: -1;
+        width: auto;
+        height: auto;
+        display: none; // fixed 会把元素 block 化，必须显式隐藏；开菜单时 JS 的行内 display:block 会覆盖它
+        // 白天模式：白色 veil（原版 50% 黑在浅色页上会发灰）
+        background: rgba(255, 255, 255, 0.5);
+    }
+    [data-theme="dark"] .nav-curtain {
+        // 深色模式：保持原版 50% 黑
+        background: rgba(0, 0, 0, 0.5);
     }
     .menu-item {
         .posts, .categories, .now, .about {
