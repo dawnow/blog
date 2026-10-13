@@ -126,7 +126,7 @@ em {
 @font-face {
     font-family: 'I.MingCP';
     font-display: swap;
-    src: url('https://cdn.jsdelivr.net/gh/dawnow/blog/static/fonts/I.MingCP-8.10.woff2') format('woff2');
+    src: url('https://cdn.jsdelivr.net/gh/dawnow/blog/static/fonts/I.MingCP-8.10-subset.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
@@ -163,6 +163,44 @@ body {
         'opsz' var(--text-opsz),
         'YTLC' var(--text-YTLC);
 }
+
+// Source Code Pro / Cinzel Decorative 自托管（原 Google Fonts），走 jsDelivr
+@font-face {
+    font-family: 'Source Code Pro';
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/npm/@fontsource/source-code-pro@5.3.1/files/source-code-pro-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/npm/@fontsource/source-code-pro@5.3.1/files/source-code-pro-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/npm/@fontsource/source-code-pro@5.3.1/files/source-code-pro-latin-400-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Source Code Pro';
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/npm/@fontsource/source-code-pro@5.3.1/files/source-code-pro-latin-700-italic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Cinzel Decorative';
+    font-display: swap;
+    src: url('https://cdn.jsdelivr.net/npm/@fontsource/cinzel-decorative@5.3.0/files/cinzel-decorative-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 html:lang(en-US) body {
     font-variation-settings: normal;
