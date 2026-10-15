@@ -26,3 +26,8 @@
     to = "https://thethinningdark.com/:splat"
     status = 301
     force = true
+
+  [[headers]]
+    for = "/fonts/*"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
