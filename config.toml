@@ -246,9 +246,6 @@ uglyURLs = false
     [[menu.main]]
         weight = 6
         identifier = "theme-switcher"
-    [[menu.main]]
-        weight = 7
-        identifier = "lang-switcher"
     # [[menu.main]]
         # weight = 8
         # identifier = "search"
@@ -989,9 +986,9 @@ uglyURLs = false
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
     fontFamilyTitle = "'Noto Serif TC', 'Noto Serif SC', serif"
     # 分节标题、目录标题
-    fontFamilyHeadings = "'I.MingCP', serif"
+    fontFamilyHeadings = "'GenRyuMinTC', serif"
     # 代码、上标、文章元信息、文章更新徽章、文章的 Git 版本信息、极简页脚、不蒜子站点浏览计数
-    fontFamilyCode = "'Source Code Pro', 'I.MingCP', monospace"
+    fontFamilyCode = "'Source Code Pro', 'GenRyuMinTC', monospace"
     # 引用
     fontFamilyQuote = ""
     # 文章目录
@@ -1001,7 +998,7 @@ uglyURLs = false
     # 页脚
     fontFamilyFooter = "'Source Code Pro', monospace"
     # 主体
-    fontFamilyBody = "'I.MingCP', serif"
+    fontFamilyBody = "'GenRyuMinTC', serif"
 
     # 网络字体链接
     fontsLink = "https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Serif+SC:wght@700&display=swap"
@@ -1484,67 +1481,3 @@ uglyURLs = false
     weight = 1
 [languages.zh-hant.params]
     contentDir = "content/zh"
-
-
-# 英文
-[languages.en]
-    label = "🇺🇸"
-    contentDir = "content/en"
-    weight = 2
-    locale = "en-US"
-    hasCJKLanguage = false
-    copyright = "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
-[languages.en.taxonomies]
-    # category = "categories"
-    # tag = "tags"
-[languages.en.menu]
-    [[languages.en.menu.main]]
-        url = "/en/posts/"
-        name = "Posts"
-        weight = 1
-        pre = "internal"
-        post = "list-alt"
-        identifier = "archive"
-    [[languages.en.menu.main]]
-        url = "/en/about/"
-        name = "About"
-        weight = 2
-        pre = "internal"
-        post = "address-card"
-        identifier = "about"
-    [[languages.en.menu.main]]
-        weight = 3
-        identifier = "theme-switcher"
-    [[languages.en.menu.main]]
-        weight = 4
-        identifier = "lang-switcher"
-
-
-    [[languages.en.menu.socials]]
-        url = "https://twitter.com/thethethinningdark"
-        name = "Twitter"
-        weight = 2
-        pre = "external"
-    [[languages.en.menu.socials]]
-        url = "https://www.instagram.com/thethinningdark/"
-        name = "Instagram"
-        weight = 3
-        pre = "external"
-
-
-[languages.en.params]
-    homePoetry = ["The universe is symmetrical", "In a parallel universe, you want to be coexists with you", "In an environment of constant change", "Only the brave and free soul, the curiosity of exploration", "It's what makes the world more interesting"]
-    siteDescription = "Dawn's Blog in English."
-    listDateFormat = "January 2"
-    postWidth = 36
-    fontFamilyTitle = ""
-    fontFamilyHeadings = ""
-    fontFamilyBody = "'Amiri', serif"
-    fontFamilyCode = "'Source Code Pro', monospace"
-    fontsLink = "https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Source+Code+Pro&display=swap"
-    lineHeight = 1.618
-    enableJustify = true
-    enableSmallCaps = true
-    enableEmphasisPoint = false
-    enableChinesePunctuationGlyphCorrection = false
-    customFooter = ""

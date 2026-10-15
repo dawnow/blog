@@ -5,10 +5,7 @@
 .post-body {
     margin-top: 4em !important;
 }
-em {
-    font-family: 'Amstelvar', serif;
-    font-variation-settings: 'wght' 280;
-}
+
 .emphasis-point {
     font-family: $fontFamilyBody;
 }
@@ -25,7 +22,7 @@ em {
 }
 
 .list-title, .term-title, .list-year, .list-month, [data-type="about"] .post-title, .now-index .post-title {
-    font-family: 'glyph-correction', 'Cinzel Decorative', 'I.MingCP', serif;
+    font-family: 'glyph-correction', 'Cinzel Decorative', 'GenRyuMinTC', serif;
 }
 .now-pin {
     color: var(--color-contrast-medium);
@@ -122,33 +119,20 @@ em {
     flex-direction: column-reverse;
 }
 
-// https://github.com/ichitenfont/I.Ming
+// https://github.com/ButTaiwan/genryu-font
 @font-face {
-    font-family: 'I.MingCP';
+    font-family: 'GenRyuMinTC';
     font-display: swap;
-    src: url('#{$baseRelURL}/fonts/I.MingCP-8.10-subset.woff2') format('woff2');
+    src: url('#{$baseRelURL}/fonts/GenRyuMin2TC-R-subset.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
 }
-
-// https://github.com/TypeNetwork/Amstelvar
 @font-face {
-    font-family: 'Amstelvar';
+    font-family: 'GenRyuMinTC';
     font-display: swap;
-    src: url('#{$baseRelURL}/fonts/Amstelvar-Roman-VF.woff2') format('woff2-variations'),
-         url('#{$baseRelURL}/fonts/Amstelvar-Roman-VF.woff2') format('woff2');
-    font-weight: 100 900;
-    font-stretch: 50% 125%;
+    src: url('#{$baseRelURL}/fonts/GenRyuMin2TC-B-subset.woff2') format('woff2');
+    font-weight: 700;
     font-style: normal;
-}
-@font-face {
-    font-family: 'Amstelvar';
-    font-display: swap;
-    src: url('#{$baseRelURL}/fonts/Amstelvar-Italic-VF.woff2') format('woff2-variations'),
-         url('#{$baseRelURL}/fonts/Amstelvar-Italic-VF.woff2') format("woff2");
-    font-weight: 100 900;
-    font-stretch: 50% 125%;
-    font-style: italic;
 }
 
 :root {
@@ -202,20 +186,6 @@ body {
 }
 
 
-html:lang(en-US) body {
-    font-variation-settings: normal;
-}
-
-article:lang(en-US) p {
-    --font-size: 18px;
-    --line-height: 1.618;
-
-    font-size: var(--font-size);
-    line-height: var(--line-height);
-    font-family: 'Amstelvar', 'Noto Serif SC', serif;
-    font-variation-settings: normal;
-}
-
 article:lang(en-US) .drop-cap {
     font-size: 3em;
     margin-right: 16px;
@@ -224,11 +194,7 @@ article:lang(en-US) .drop-cap {
 }
 
 .post-title {
-    font-family: 'glyph-correction', 'Amstelvar', 'Noto Serif SC', serif;
-    font-variation-settings:
-        'wght' 550,
-        'opsz' 60,
-        'YOPQ' 90;
+    font-family: 'glyph-correction', 'Noto Serif SC', serif;
 }
 
 .list-item-time {
@@ -272,7 +238,7 @@ blockquote.quote {
         p {
             line-height: 1.618;
             text-align: left;
-            font-family: 'Amstelvar', 'I.MingCP', serif;
+            font-family: 'GenRyuMinTC', serif;
             font-variation-settings: normal;
         }
     }
