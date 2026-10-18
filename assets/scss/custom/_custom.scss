@@ -145,6 +145,15 @@ body {
         'YTLC' var(--text-YTLC);
 }
 
+// Lato 自托管（原 Google Fonts），走自家域名
+@font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    src: url('#{$baseRelURL}/fonts/lato-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 // Source Code Pro / Cinzel Decorative 自托管（原 Google Fonts），走 jsDelivr
 @font-face {
     font-family: 'Source Code Pro';
@@ -191,7 +200,7 @@ article:lang(en-US) .drop-cap {
 }
 
 .post-title {
-    font-family: 'glyph-correction', 'Noto Serif SC', serif;
+    font-family: 'glyph-correction', 'GenRyuMinTC', serif;
 }
 
 .list-item-time {
