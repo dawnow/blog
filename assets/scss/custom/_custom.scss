@@ -154,6 +154,27 @@ body {
     font-style: normal;
 }
 
+// Amstelvar 自托管（TypeNetwork），正文拉丁字形用
+// https://github.com/TypeNetwork/Amstelvar
+@font-face {
+    font-family: 'Amstelvar';
+    font-display: swap;
+    src: url('#{$baseRelURL}/fonts/Amstelvar-Roman-VF.woff2') format('woff2-variations'),
+         url('#{$baseRelURL}/fonts/Amstelvar-Roman-VF.woff2') format('woff2');
+    font-weight: 100 900;
+    font-stretch: 50% 125%;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Amstelvar';
+    font-display: swap;
+    src: url('#{$baseRelURL}/fonts/Amstelvar-Italic-VF.woff2') format('woff2-variations'),
+         url('#{$baseRelURL}/fonts/Amstelvar-Italic-VF.woff2') format("woff2");
+    font-weight: 100 900;
+    font-stretch: 50% 125%;
+    font-style: italic;
+}
+
 // Source Code Pro / Cinzel Decorative 自托管（原 Google Fonts），走 jsDelivr
 @font-face {
     font-family: 'Source Code Pro';
@@ -244,7 +265,7 @@ blockquote.quote {
         p {
             line-height: 1.618;
             text-align: left;
-            font-family: 'GenRyuMinTC', serif;
+            font-family: 'Amstelvar', 'GenRyuMinTC', serif;
             font-variation-settings: normal;
         }
     }

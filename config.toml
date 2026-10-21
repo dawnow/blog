@@ -998,7 +998,7 @@ uglyURLs = false
     # 页脚
     fontFamilyFooter = "'Source Code Pro', monospace"
     # 主体
-    fontFamilyBody = "'GenRyuMinTC', serif"
+    fontFamilyBody = "'Amstelvar', 'GenRyuMinTC', serif"
 
     # 网络字体链接
     fontsLink = ""
