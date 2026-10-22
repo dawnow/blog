@@ -1,13 +1,10 @@
 ---
 title: "Now"
 ---
-{{< pin >}}🚧本博客目前最新的域名為 `thethinningdark.com`，
-
-之前的域名 `dawner.space` 將會在 2026 年 10 月 23 日到期，
-
-屆時無法再通過其打開本博客。{{< /pin >}}
+{{< pin >}}本博客目前最新的域名為 `thethinningdark.com`，之前的域名 `dawner.space` 將會在 `2026 年 10 月 23` 日到期，屆時無法再通過其打開本博客。{{< /pin >}}
 
 **十月二十一日**
+
 - 我的擴展程序 Carder 已上架 [Chrome Web Store](https://chromewebstore.google.com/detail/odldhnfinafmaolfbbnnmccpcolkfmhb?utm_source=item-share-cb) ！[Homepage](https://imdawn.notion.site/carder-extension?source=copy_link) 在這裡，主要是 Roadmap 和 Changelog。
 - 本網站更換了中文字型，目前使用[源流明體](https://github.com/ButTaiwan/genryu-font) TC，如你所見，主要呈現出傳統鉛字印刷體的風格，也保留古雅的字形特徵。同時和目前在使用的 Amstelvar 可變字型風格接近，都是偏修長和雅緻的字型。
 - 本網站的加載效能已優化，使用 LightHouse 測試的結果如下圖，若你在中國大陸第一次加載時耗時較久，其一因為 cloudflare 在這裏沒有節點；其二是我使用了完整的字體集，第一次加載緩存後的一年內訪問會無比順暢。![20261016162505173.png](https://img.thethinningdark.com/images/20261016162505173.png)
