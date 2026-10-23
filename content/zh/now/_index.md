@@ -1,8 +1,6 @@
 ---
 title: "Now"
 ---
-{{< pin >}}本博客目前最新的域名為 `thethinningdark.com`，之前的域名 `dawner.space` 將會在 `2026 年 10 月 23` 日到期，屆時無法再通過其打開本博客。{{< /pin >}}
-
 **十月二十一日**
 
 - 我的擴展程序 Carder 已上架 [Chrome Web Store](https://chromewebstore.google.com/detail/odldhnfinafmaolfbbnnmccpcolkfmhb?utm_source=item-share-cb) ！[Homepage](https://imdawn.notion.site/carder-extension?source=copy_link) 在這裡，主要是 Roadmap 和 Changelog。
