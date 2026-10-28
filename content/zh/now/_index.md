@@ -1,9 +1,14 @@
 ---
 title: "Now"
 ---
+**十月二十八日**
+
+- 我的扩展程序目前也已上线 [Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/carder/kpaapmondabbeodnafoclehbfhlnokce)。实话说，Microsoft 的审核速度真的极其缓慢，建议先去 Chrome Web Store 使用相对更新的版本。
+- 最近购买的 MUJI 的绒面革手机壳很适合降温后的天气，缺点是容易粘毛，之前一直用的是它家 TPU 的，也用了两年了，我同时购买了一个蓄光耳机壳。
+
 **十月二十一日**
 
-- 我的擴展程序 Carder 已上架 [Chrome Web Store](https://chromewebstore.google.com/detail/odldhnfinafmaolfbbnnmccpcolkfmhb?utm_source=item-share-cb) ！[Homepage](https://imdawn.notion.site/carder-extension?source=copy_link) 在這裡，主要是 Roadmap 和 Changelog。
+- 我的擴展程序 Carder 已上架 [Chrome Web Store](https://chromewebstore.google.com/detail/odldhnfinafmaolfbbnnmccpcolkfmhb?utm_source=item-share-cb) ！[Homepage](https://thethinningdark.notion.site/carder-extension?source=copy_link) 在這裡，主要是 Roadmap 和 Changelog。
 - 本網站更換了中文字型，目前使用[源流明體](https://github.com/ButTaiwan/genryu-font) TC，如你所見，主要呈現出傳統鉛字印刷體的風格，也保留古雅的字形特徵。同時和目前在使用的 Amstelvar 可變字型風格接近，都是偏修長和雅緻的字型。
 - 本網站的加載效能已優化，使用 LightHouse 測試的結果如下圖，若你在中國大陸第一次加載時耗時較久，其一因為 cloudflare 在這裏沒有節點；其二是我使用了完整的字體集，第一次加載緩存後的一年內訪問會無比順暢。![20261016162505173.png](https://img.thethinningdark.com/images/20261016162505173.png)
 
