@@ -12,9 +12,12 @@
 若 public/ 不存在，说明还没构建，脚本直接报错退出。
 """
 
+import hashlib
 import os
 import re
+import shutil
 import sys
+import glob
 import html as htmllib
 
 from fontTools.ttLib import TTFont
@@ -99,6 +102,70 @@ def check(chars):
     return 1 if bad else 0
 
 
+def fingerprint_and_patch(pairs):
+    """给字体加内容哈希，并把 CSS / HTML 里的引用改到新文件名。
+
+    字体带 immutable 缓存头，文件名不变就会一直命中旧缓存，所以必须让
+    URL 随内容变。改完再删掉无哈希的旧副本；任何一步出错都保留旧副本，
+    退回「无哈希也能用」的状态，不让构建失败。
+    """
+    mapping = {}
+    for old_name in pairs:
+        path = os.path.join(OUT_DIR, old_name)
+        with open(path, "rb") as fh:
+            digest = hashlib.sha256(fh.read()).hexdigest()[:8]
+        new_name = f"{old_name[:-len('.woff2')]}.{digest}.woff2"
+        shutil.copyfile(path, os.path.join(OUT_DIR, new_name))
+        mapping[old_name] = new_name
+
+    patched = 0
+    for css in glob.glob(os.path.join(PUBLIC, "css", "*.css")):
+        with open(css, encoding="utf-8") as fh:
+            text = fh.read()
+        if any(old in text for old in mapping):
+            for old, new in mapping.items():
+                text = text.replace(old, new)
+            with open(css, "w", encoding="utf-8", newline="") as fh:
+                fh.write(text)
+            patched += 1
+
+    for root, _, files in os.walk(PUBLIC):
+        for fn in files:
+            if not fn.endswith(".html"):
+                continue
+            path = os.path.join(root, fn)
+            with open(path, encoding="utf-8") as fh:
+                text = fh.read()
+            if not any(old in text for old in mapping):
+                continue
+            for old, new in mapping.items():
+                text = text.replace(old, new)
+            with open(path, "w", encoding="utf-8", newline="") as fh:
+                fh.write(text)
+            patched += 1
+
+    # 确认没有漏改的引用，才删旧副本
+    leftovers = []
+    for root, _, files in os.walk(PUBLIC):
+        for fn in files:
+            if not (fn.endswith(".html") or fn.endswith(".css")):
+                continue
+            path = os.path.join(root, fn)
+            with open(path, encoding="utf-8", errors="ignore") as fh:
+                text = fh.read()
+            leftovers += [old for old in mapping if old in text]
+    if leftovers:
+        print(f"警告：仍有 {len(set(leftovers))} 个字体的旧引用，保留无哈希副本")
+        return mapping, False
+
+    for old_name in pairs:
+        os.remove(os.path.join(OUT_DIR, old_name))
+
+    for old, new in mapping.items():
+        print(f"{old} -> {new}")
+    return mapping, patched > 0
+
+
 def main():
     chars, pages = collect_chars()
     if len(chars) < 500:
@@ -124,6 +191,11 @@ def main():
         f"页面 {pages} 个，用字 {len(chars)} 个；"
         f"{total_before / 1024 / 1024:.1f} MB -> {total_after / 1024 / 1024:.2f} MB"
     )
+
+    try:
+        fingerprint_and_patch(("GenRyuMin2TC-R-subset.woff2", "GenRyuMin2TC-B-subset.woff2"))
+    except Exception as exc:  # 不让加哈希的失败拖垮部署
+        print(f"警告：加内容哈希失败（{exc}），继续使用无哈希文件名")
 
 
 if __name__ == "__main__":
