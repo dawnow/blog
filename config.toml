@@ -95,19 +95,9 @@ uglyURLs = false
     keepWhitespace = false
 
 # 作者信息
-[author]
-    # 名字
-    name = "Dawn"
-    # 邮箱
-    email = "jmugeekchen7one@gmail.com"
-    # 座右铭或简介
-    motto = "oops"
-    # 头像
-    avatar = "/icons/apple-touch-icon.png"
-    # 网站（默认值：baseURL）
-    website = "https:/thethinningdark.com/"
-    # 推特
-    twitter = "thethinningdark"
+# 说明：MemE 主题的 head / feed / JSON-LD 读取的是
+#      `.Site.Params.author.*`，所以作者信息必须放在
+#      `[params]` 之下，见文件末尾的 `[params.author]`。
 
 # 相关文章
 [related]
@@ -154,7 +144,7 @@ uglyURLs = false
 # Hugo 的输出控制
 [outputs]
     page = ["HTML"]
-    home = ["HTML", "SectionsAtom", "SectionsRSS", "SearchIndex"]
+    home = ["HTML", "SectionsAtom", "SectionsRSS"]
     section = ["HTML"]
     # 类别
     taxonomy = ["HTML"]
@@ -164,7 +154,7 @@ uglyURLs = false
 
 # RSS & Atom 文章数限制
 [services.rss]
-    limit = 10
+    limit = 30
 
 
 
@@ -415,9 +405,14 @@ uglyURLs = false
     # 说明：用于 JSON-LD、Open Graph
 
     # 站点的描述
-    siteDescription = "去認識，而非試圖解釋。This message is used to verify that this feed (feedId:1172691653463244800) belongs to me (userId:59840182088728576). Join me in enjoying the next generation information browser https://folo.is."
+    siteDescription = "去認識，而非試圖解釋。"
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
+
+    # Folo 的 feed 归属验证串
+    # 只拼进 Atom / RSS 的频道描述，不进网页的
+    # meta description 与 Open Graph。
+    foloVerification = "This message is used to verify that this feed (feedId:1172691653463244800) belongs to me (userId:59840182088728576). Join me in enjoying the next generation information browser https://folo.is."
 
     # 站点的创建时间
     siteCreatedTime = "2017-05-15T20:17:43+00:00"
@@ -1438,6 +1433,23 @@ uglyURLs = false
 
     enableVideoHelper = true
 
+
+    ######################################
+    # 作者信息（head / Atom / RSS / JSON-LD 读取此处）
+
+    [params.author]
+        # 名字
+        name = "Dawn"
+        # 邮箱
+        email = "jmugeekchen7one@gmail.com"
+        # 座右铭或简介
+        motto = "oops"
+        # 头像
+        avatar = "/icons/apple-touch-icon.png"
+        # 网站
+        website = "https://thethinningdark.com/"
+        # 推特
+        twitter = "thethinningdark"
 
     ######################################
     # 定制第三方库的地址

@@ -1,4 +1,4 @@
-﻿{{ `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
+{{ `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
 <!-- Reference: https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml -->
 <!-- Reference: https://github.com/kaushalmodi/hugo-atom-feed/blob/master/layouts/_default/list.atom.xml -->
 <!-- Reference: https://validator.w3.org/feed/docs/rss2.html -->
@@ -14,7 +14,7 @@
     <channel>
         <title>{{ .Site.Title }}</title>
         <link>{{ .Permalink }}</link>
-        <description>{{ .Site.Params.siteDescription }}</description>
+        <description>{{ .Site.Params.siteDescription }}{{ with .Site.Params.foloVerification }} {{ . }}{{ end }}</description>
         <generator>Hugo {{ hugo.Version }} https://gohugo.io/</generator>
         {{ with .Site.Language.Locale }}
             <language>{{ . }}</language>

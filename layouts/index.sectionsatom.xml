@@ -1,4 +1,4 @@
-﻿{{ `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
+{{ `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
 <!-- Reference: https://tools.ietf.org/html/rfc4287 -->
 <!-- Reference: https://github.com/kaushalmodi/hugo-atom-feed/blob/master/layouts/_default/list.atom.xml -->
 <!-- Reference: https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/_default/rss.xml -->
@@ -9,7 +9,7 @@
 {{- end -}}
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ .Site.Language.Locale }}">
     <title type="text">{{ .Site.Title }}</title>
-    <subtitle type="html">{{ .Site.Params.siteDescription }}</subtitle>
+    <subtitle type="html">{{ .Site.Params.siteDescription }}{{ with .Site.Params.foloVerification }} {{ . }}{{ end }}</subtitle>
     <updated>{{ now.Format "2006-01-02T15:04:05-07:00" }}</updated>
     <id>{{ .Permalink }}</id>
     <link rel="alternate" type="text/html" href="{{ .Permalink }}" />
