@@ -36,11 +36,15 @@ SRC_R = os.path.join(REPO, "fonts-src", "GenRyuMin2TC-R.woff2")
 SRC_B = os.path.join(REPO, "fonts-src", "GenRyuMin2TC-B.woff2")
 OUT_DIR = os.path.join(PUBLIC, "fonts")
 
-# 需要 GenRyuMinTC 供货的字面：CJK 统一表意文字、兼容区、注音/标点、全角形式、扩展 B 及以后
-CJK = re.compile(
-    "[\u2e80-\u9fff\uf900-\ufaff\ufe30-\ufe4f\uff00-\uffef\u3000-\u303f"
-    "\U00020000-\U0002ffff]"
-)
+# GenRyuMinTC 在字体栈里只负责非拉丁字符（拉丁由 Amstelvar 供货）。
+# 这里必须收集**全部**非 ASCII 可打印字符，而不只是 CJK 区段：
+# ◎（U+25CE）、※（U+203B）、→、①、℃ 这些排版符号同样由它渲染，
+# 漏掉就会回落到系统字体，出现大小/字形不一致。
+# 源字体没有的字符（emoji 等）会在子集化时被自动忽略。
+
+# 排版符号兜底：即使当前页面没用到也保留，避免改 captionPrefix（◎ ↔ ※）
+# 或日后写作引入这些符号时突然回落到系统字体。
+ALWAYS = set("◎※→←↑↓①②③④⑤℃°±×÷≠≤≥…—–‘’“”「」『』◆●○")
 
 
 def collect_chars():
@@ -60,7 +64,13 @@ def collect_chars():
             text = re.sub(r"<script\b.*?</script>|<style\b.*?</style>", "", text, flags=re.S | re.I)
             text = re.sub(r"<[^>]+>", "", text)
             text = htmllib.unescape(text)
-            chars.update(CJK.findall(text))
+            chars.update(ch for ch in text if ord(ch) >= 0x80 and ch.isprintable())
+
+    # 只保留源字体真正能提供的字符：emoji 等本来就不在字库里，
+    # 留着会让 --check 永远报“缺字”，也会白白参与哈希。
+    cmap = TTFont(SRC_R).getBestCmap()
+    chars |= ALWAYS
+    chars = {c for c in chars if ord(c) in cmap}
     return chars, pages
 
 
@@ -173,6 +183,12 @@ def fingerprint_and_patch(pairs, digest):
 
     for old_name in pairs:
         os.remove(os.path.join(OUT_DIR, old_name))
+
+    # 清掉上一次构建遗留的带哈希文件，避免 public/fonts 越积越多
+    keep = set(mapping.values())
+    for stray in glob.glob(os.path.join(OUT_DIR, "GenRyuMin2TC-*-subset.*.woff2")):
+        if os.path.basename(stray) not in keep:
+            os.remove(stray)
 
     for old, new in mapping.items():
         print(f"{old} -> {new}")
