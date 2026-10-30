@@ -6,6 +6,8 @@
   HUGO_VERSION = "0.166.0"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
+  # 构建时按页面用字重切字体子集，需要 Python + fonttools（见 requirements.txt）
+  PYTHON_VERSION = "3.11"
 
   [[headers]]
     for = "/fonts/*"
