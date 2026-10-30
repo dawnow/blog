@@ -686,8 +686,10 @@ uglyURLs = false
 
     ## Valine
     enableValine = false
-    valineAppId = "fB3nPgDVQ91Gr8UOHsdhQV0q-gzGzoHsz"
-    valineAppKey = "RPf0YYgkqSheTt77hs7VTEkC"
+    # 原来的 AppID / AppKey 已经公开在仓库的提交历史里，删除它们并不等于作废；
+    # 请务必去 LeanCloud 控制台将该应用作废或重置密钥，再填入新值。
+    valineAppId = ""
+    valineAppKey = ""
     valinePlaceholder = "撰写评论"
     valineNotify = false
     valineVerify = false
