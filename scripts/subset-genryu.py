@@ -102,8 +102,23 @@ def check(chars):
     return 1 if bad else 0
 
 
-def fingerprint_and_patch(pairs):
-    """给字体加内容哈希，并把 CSS / HTML 里的引用改到新文件名。
+def glyph_digest(chars):
+    """按「字集内容 + 源字体内容」取哈希。
+
+    不能按输出文件字节取：同样的输入，fontTools / brotli 每次压出来的
+    字节可能不同（本地和 Netlify 就不一致），那样每次构建都会换 URL，
+    immutable 缓存等于白设。字集不变就应当得到同一个名字。
+    """
+    h = hashlib.sha256()
+    h.update("".join(sorted(chars)).encode("utf-8"))
+    for src in (SRC_R, SRC_B):
+        with open(src, "rb") as fh:
+            h.update(hashlib.sha256(fh.read()).digest())
+    return h.hexdigest()[:8]
+
+
+def fingerprint_and_patch(pairs, digest):
+    """给字体加上按字集算出的哈希，并把 CSS / HTML 里的引用改到新文件名。
 
     字体带 immutable 缓存头，文件名不变就会一直命中旧缓存，所以必须让
     URL 随内容变。改完再删掉无哈希的旧副本；任何一步出错都保留旧副本，
@@ -112,8 +127,6 @@ def fingerprint_and_patch(pairs):
     mapping = {}
     for old_name in pairs:
         path = os.path.join(OUT_DIR, old_name)
-        with open(path, "rb") as fh:
-            digest = hashlib.sha256(fh.read()).hexdigest()[:8]
         new_name = f"{old_name[:-len('.woff2')]}.{digest}.woff2"
         shutil.copyfile(path, os.path.join(OUT_DIR, new_name))
         mapping[old_name] = new_name
@@ -193,7 +206,10 @@ def main():
     )
 
     try:
-        fingerprint_and_patch(("GenRyuMin2TC-R-subset.woff2", "GenRyuMin2TC-B-subset.woff2"))
+        fingerprint_and_patch(
+            ("GenRyuMin2TC-R-subset.woff2", "GenRyuMin2TC-B-subset.woff2"),
+            glyph_digest(chars),
+        )
     except Exception as exc:  # 不让加哈希的失败拖垮部署
         print(f"警告：加内容哈希失败（{exc}），继续使用无哈希文件名")
 
