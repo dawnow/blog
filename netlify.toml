@@ -4,8 +4,9 @@
 
 [build.environment]
   HUGO_VERSION = "0.166.0"
-  HUGO_ENV = "production"
-  HUGO_ENABLEGITINFO = "true"
+  # HUGO_ENV / HUGO_ENABLEGITINFO 是旧变量名：前者改为 HUGO_ENVIRONMENT，
+  # 后者在 0.166 已不再生效（不要指望它提供 git 日期）。
+  HUGO_ENVIRONMENT = "production"
   # 构建时按页面用字重切字体子集，需要 Python + fonttools（见 requirements.txt）
   PYTHON_VERSION = "3.11"
 
