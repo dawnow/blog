@@ -10,7 +10,20 @@
   # 构建时按页面用字重切字体子集，需要 Python + fonttools（见 requirements.txt）
   PYTHON_VERSION = "3.11"
 
-  [[headers]]
-    for = "/fonts/*"
-    [headers.values]
+# 字体文件名带内容哈希，可以长期强缓存
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Service Worker 本体必须每次回源校验，否则新版本会被缓存挡住
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# workbox 运行时文件名固定，升级时要能及时换成新内容
+[[headers]]
+  for = "/sw/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
