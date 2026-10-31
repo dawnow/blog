@@ -1,3 +1,11 @@
 {{- $alt := .Text -}}
 {{- if not $alt }}{{ $alt = .Title }}{{ end -}}
-<img src="{{ .Destination | safeURL }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }} />
+{{- $src := .Destination -}}
+{{- $srcset := "" -}}
+{{- /* 图床支持腾讯 COS 的图片处理：按宽度生成缩略图，避免手机下载原图（单张可达 12 MB）。
+       thumbnail/Wx> 里的 > 用 %3E 表示「不超过」，防止小图被放大。 */ -}}
+{{- if and (hasPrefix $src "https://img.thethinningdark.com/") (not (strings.Contains $src "?")) -}}
+    {{- $srcset = printf "%s?imageMogr2/thumbnail/640x%%3E/quality/82 640w, %s?imageMogr2/thumbnail/960x%%3E/quality/82 960w, %s?imageMogr2/thumbnail/1280x%%3E/quality/82 1280w" $src $src $src -}}
+    {{- $src = printf "%s?imageMogr2/thumbnail/960x%%3E/quality/82" $src -}}
+{{- end -}}
+<img src="{{ $src | safeURL }}"{{ with $srcset }} srcset="{{ . }}" sizes="(max-width: 720px) 100vw, 648px"{{ end }} alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }} />
