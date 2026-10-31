@@ -1,11 +1,20 @@
 {{- $alt := .Text -}}
 {{- if not $alt }}{{ $alt = .Title }}{{ end -}}
-{{- $src := .Destination -}}
+{{- $orig := .Destination -}}
+{{- $src := $orig -}}
 {{- $srcset := "" -}}
+{{- $dims := "" -}}
+{{- /* 尺寸表来自 data/imagedims.json（由 ?imageInfo 生成），用于预留占位、消除 CLS */ -}}
+{{- $host := "https://img.thethinningdark.com/images/" -}}
+{{- if hasPrefix $orig $host -}}
+    {{- $key := strings.TrimPrefix $host $orig -}}
+    {{- with index hugo.Data.imagedims $key -}}{{- $dims = . -}}{{- end -}}
+{{- end -}}
 {{- /* 图床支持腾讯 COS 的图片处理：按宽度生成缩略图，避免手机下载原图（单张可达 12 MB）。
        thumbnail/Wx> 里的 > 用 %3E 表示「不超过」，防止小图被放大。 */ -}}
 {{- if and (hasPrefix $src "https://img.thethinningdark.com/") (not (strings.Contains $src "?")) -}}
-    {{- $srcset = printf "%s?imageMogr2/thumbnail/640x%%3E/quality/82 640w, %s?imageMogr2/thumbnail/960x%%3E/quality/82 960w, %s?imageMogr2/thumbnail/1280x%%3E/quality/82 1280w" $src $src $src -}}
-    {{- $src = printf "%s?imageMogr2/thumbnail/960x%%3E/quality/82" $src -}}
+    {{- $url := replace $src " " "%20" -}}
+    {{- $srcset = printf "%s?imageMogr2/thumbnail/640x%%3E/quality/82 640w, %s?imageMogr2/thumbnail/960x%%3E/quality/82 960w, %s?imageMogr2/thumbnail/1280x%%3E/quality/82 1280w" $url $url $url -}}
+    {{- $src = printf "%s?imageMogr2/thumbnail/960x%%3E/quality/82" $url -}}
 {{- end -}}
-<img src="{{ $src | safeURL }}"{{ with $srcset }} srcset="{{ . }}" sizes="(max-width: 720px) 100vw, 648px"{{ end }} alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }} />
+<img src="{{ $src | safeURL }}"{{ with $srcset }} srcset="{{ . }}" sizes="(max-width: 720px) 100vw, 648px"{{ end }}{{ with $dims }} width="{{ index . 0 }}" height="{{ index . 1 }}"{{ end }} alt="{{ $alt }}" loading="lazy" decoding="async"{{ with .Title }} title="{{ . }}"{{ end }} />

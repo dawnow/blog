@@ -34,6 +34,13 @@
     font-feature-settings: 'tnum';
 }
 
+// 图片带有 width/height 属性（用于预留占位、消除 CLS），
+// 必须配合 height:auto 才不会在窄屏上被压扁
+.post img,
+.post-body img {
+    height: auto;
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-weight: bold;
