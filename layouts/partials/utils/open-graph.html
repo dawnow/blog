@@ -1,4 +1,4 @@
-﻿<!-- http://ogp.me/ -->
+<!-- http://ogp.me/ -->
 <!-- https://developers.facebook.com/docs/sharing/webmasters -->
 <!-- https://developers.google.com/web/fundamentals/discovery/social-discovery/ -->
 <!-- https://stackoverflow.com/a/29831974 -->
@@ -28,9 +28,8 @@
 {{- with $images -}}
     <meta property="og:image" content="{{ index . 0 }}" />
 {{ else -}}
-    {{ with $.Site.Params.siteLogo -}}
-        <meta property="og:image" content="{{ . | absURL }}" />
-    {{ end -}}
+    {{- /* 没有配图时用 512px 的应用图标，而不是 180px 的 touch icon */ -}}
+    <meta property="og:image" content="{{ "icons/web-app-manifest-512x512.png" | absURL }}" />
 {{- end -}}
 
 {{- if and $.IsPage (in $.Site.Params.mainSections $.Section) -}}

@@ -1,4 +1,4 @@
-﻿<!-- https://schema.org/ -->
+<!-- https://schema.org/ -->
 <!-- https://json-ld.org/ -->
 <!-- https://search.google.com/structured-data/testing-tool -->
 {{- $ := index . "$" -}}
@@ -65,7 +65,7 @@
         "articleSection": {{ $.Section }},
         "wordCount": {{ $.WordCount }},
         {{ with $images -}}
-        "image": {{ . }},
+        "image": {{ slice (index . 0) }},
         {{ else -}}
         {{ with $.Site.Params.siteLogo -}}
         "image": {{ . | absURL }},

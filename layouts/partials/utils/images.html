@@ -1,0 +1,36 @@
+{{- $imgs := .Params.images -}}
+
+<!-- Auto Detect Images -->
+{{- if and (not $imgs) .Site.Params.autoDetectImages -}}
+    {{- $imgs = partial "utils/auto-detect-images.html" . -}}
+{{- end -}}
+
+{{- with $imgs -}}
+    {{- $translated := slice -}}
+    {{- range $index, $img := $imgs -}}
+        <!-- Image Hosting -->
+        {{- if and $.Site.Params.enableImageHost $.Site.Params.headAlso -}}
+            {{- if (eq hugo.Environment "production") -}}
+                {{- if ne (substr . 0 4) "http" -}}
+                    {{- $img = printf `%s/%s` (strings.TrimSuffix "/" $.Site.Params.imageHostURL) (strings.TrimPrefix "/" $img) -}}
+                {{- end -}}
+            {{- end -}}
+        {{- end -}}
+
+        <!-- Make URLs absolute -->
+        {{- $img = $img | absURL -}}
+
+        {{- /* 社交卡片（og:image / JSON-LD）统一取 1200px 的图床变体：
+               正文里的 srcset 最高 1280w，而卡片只需要一张够大的图；
+               原图动辄 12 MB，抓取方会直接超时。 */ -}}
+        {{- $base := index (split $img "?") 0 -}}
+        {{- if hasPrefix $base "https://img.thethinningdark.com/" -}}
+            {{- $img = printf "%s?imageMogr2/thumbnail/1200x%%3E/quality/82" $base -}}
+        {{- end -}}
+
+        {{- $translated = union $translated (slice $img) -}}
+    {{- end -}}
+    {{- $imgs = $translated -}}
+{{- end -}}
+
+{{- return $imgs -}}
