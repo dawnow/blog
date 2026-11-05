@@ -127,7 +127,7 @@ BASE_NAME="${YEAR}-${MONTH_PADDED}"
 TARGET="${BASE_NAME}.md"
 CN_YEAR=$(num_year_to_cn "$YEAR")
 CN_MONTH=$(num_month_to_cn "$MONTH")
-TITLE="${CN_YEAR}年  ${CN_MONTH}月"
+TITLE="${CN_YEAR}年 ${CN_MONTH}月"
 
 echo "归档文件：$TARGET"
 echo "归档标题：$TITLE"
