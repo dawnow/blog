@@ -41,6 +41,16 @@
     height: auto;
 }
 
+// Now 页：一条即一段，用间距而不是列表来表达条目边界
+[data-type='now'] .post-body p {
+    margin: 1.5em 0;
+}
+
+// 日期那一段只有 <strong>，单独给更大的上边距，形成「日期 > 条目」的层次
+[data-type='now'] .post-body p:has(> strong:only-child) {
+    margin: 3.2em 0 0.35em;
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-weight: bold;
