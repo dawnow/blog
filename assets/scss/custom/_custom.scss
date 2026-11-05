@@ -21,13 +21,29 @@
 .list-title, .term-title, .list-year, .list-month, [data-type="about"] .post-title, .now-index .post-title {
     font-family: 'glyph-correction', 'Cinzel Decorative', 'GenRyuMinTC', serif;
 }
+// Now 页顶部的说明：顶部细线 + 小字，像书里的「凡例」。
+// 不用盒子——全站只有一个圆角矩形会显得像插入的 UI 组件。
 .now-pin {
     color: var(--color-contrast-medium);
+    // 比 medium 略深一档，把对比度从 4.35:1 提到 ~5.2:1（AA）；
+    // 深色主题下 high 更亮，混合后同样是提高对比度。
+    color: color-mix(in srgb, var(--color-contrast-medium) 80%, var(--color-contrast-high));
+    font-size: 90%;
     line-height: 1.618;
-    border: 1px solid var(--color-contrast-low);
-    border-radius: 0.5em;
-    padding: 0.9em 1.2em;
-    margin: 0 0 3em;
+    border-top: 1px solid var(--color-contrast-low);
+    // 线距约为行距的 1/3：横线归它下面的文字，线下空隙要明显小于线上
+    padding: 0.5em 0 0;
+    margin: 0 0 2.8em;
+}
+
+// 盒内的段落统一向内收，避免主题的 p 外边距把盒子撑开
+.now-pin > p {
+    margin: 0;
+    line-height: inherit;
+}
+
+.now-pin > p + p {
+    margin-top: 0.8em;
 }
 
 .list-item-time {

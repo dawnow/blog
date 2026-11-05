@@ -1,1 +1,11 @@
-<div class="now-pin">{{ .Inner | markdownify }}</div>
+{{- /* Now 页顶部的说明块。
+       前缀沿用图注的 captionPrefix（默认为「※」），让两处使用同一种符号。
+       用 RenderString 的 block 模式，保证单段/多段都输出 <p>，
+       这样 CSS 只需要处理一种结构，不会出现「单行是裸文本、多段是 <p>」的差异。 */ -}}
+{{- $page := .Page -}}
+{{- $prefix := $page.Site.Params.captionPrefix | default "" -}}
+{{- with .Inner -}}
+<aside class="now-pin" role="note">
+    {{ printf "%s%s" $prefix (strings.TrimSpace .) | $page.RenderString (dict "display" "block") }}
+</aside>
+{{- end -}}
