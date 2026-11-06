@@ -1,6 +1,6 @@
-<svg width="601" height="601" viewBox="0 0 601 601" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="600" height="600" fill="#FDFAF6" stroke="black"/>
-<rect x="159" y="357.609" width="283.858" height="159.765" stroke="black" stroke-opacity="0.8" stroke-width="41"/>
-<path d="M353.309 355.573H250.456L301.882 266.499L353.309 355.573Z" stroke="black" stroke-opacity="0.8" stroke-width="41"/>
-<circle cx="301.26" cy="163.882" r="79.8824" stroke="black" stroke-opacity="0.8" stroke-width="41"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="the thinning dark">
+  <title>the thinning dark</title>
+  <rect width="600" height="600" fill="#FDFAF6"/>
+  <rect x="0" y="270" width="522" height="330" fill="#4A9BDA"/>
+  <circle cx="465" cy="135" r="135" fill="#E8A074"/>
 </svg>
