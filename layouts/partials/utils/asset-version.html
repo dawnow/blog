@@ -1,0 +1,8 @@
+{{- /* 返回 static/ 下某个文件的内容哈希，用于给 URL 加 ?v= 版本号。
+       文件名不变时浏览器会一直用缓存里的旧图标，加版本号才能让改动立即生效。
+       用法：partial "utils/asset-version.html" (dict "path" "static/favicon.ico") */ -}}
+{{- $v := "" -}}
+{{- with os.ReadFile .path -}}
+    {{- $v = printf "%x" (hash.FNV32a .) -}}
+{{- end -}}
+{{- return $v -}}

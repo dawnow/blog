@@ -1,0 +1,126 @@
+<head{{ if .Site.Params.openGraph }} prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#"{{ end }}>
+    <meta charset="UTF-8" />
+
+    {{ hugo.Generator }}
+
+    {{- with .Site.Params.defaultTheme | default "light" -}}
+        {{- if eq . "light" -}}
+            <meta name="theme-color" content="{{ $.Site.Params.themeColor }}" />
+        {{- else -}}
+            <meta name="theme-color" content="{{ $.Site.Params.themeColorDark }}" />
+        {{- end -}}
+    {{- end -}}
+
+    <!-- https://web.dev/color-scheme/ -->
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Responsive Web Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Avoid Automatic Format Detection -->
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    <!-- Avoid Transcoding -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <!-- Avoid Baidu Mobile Search Transcoding -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>{{ (partial "utils/title.html" (dict "$" . "title" .Title)).title }}</title>
+
+    <!-- CSS -->
+    {{- partial "style.html" . }}
+
+    <!-- JavaScript -->
+    {{ if ne .Kind "404" }}
+        {{ if .Scratch.Get "fedishare_page" }}
+            {{ partial "components/fedishare-script.html" . }}
+        {{ else }}
+            {{ partial "script.html" . }}
+        {{ end }}
+    {{ end }}
+
+    <!-- Fonts -->
+    {{- with .Site.Params.fontsLink -}}
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="{{ . }}" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="{{ . }}" /></noscript>
+    {{- end }}
+
+    <meta name="author" content="{{ .Params.author | default .Site.Params.author.name }}" />
+    {{- $description := .Description | default (partial "utils/summary.html" .) | default .Site.Params.siteDescription | plainify | htmlUnescape -}}
+    <meta name="description" content="{{ $description }}" />
+
+    <!-- Favicon, Icons, Web App -->
+    {{- /* 从主题复制过来，只改了这一段：图标 URL 追加内容哈希。
+           static/ 下的文件 Hugo 不会做 fingerprint，文件名又保持不变，
+           浏览器会把旧图标一直缓存下去，只有换 URL 才能立即生效。 */ -}}
+    {{- $vIcon := partial "utils/asset-version.html" (dict "path" "static/favicon.ico") -}}
+    {{- $vSvg := partial "utils/asset-version.html" (dict "path" "static/icons/favicon.svg") -}}
+    {{- $vPng := partial "utils/asset-version.html" (dict "path" "static/icons/favicon-96x96.png") -}}
+    {{- $vApple := partial "utils/asset-version.html" (dict "path" "static/icons/apple-touch-icon.png") -}}
+    {{- $vManifest := partial "utils/asset-version.html" (dict "path" "static/manifest.json") -}}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}?v={{ $vIcon }}" />
+    <link rel="icon" type="image/svg+xml" href="{{ "icons/favicon.svg" | relURL }}?v={{ $vSvg }}" />
+    <link rel="icon" type="image/png" href="{{ "icons/favicon-96x96.png" | relURL }}?v={{ $vPng }}" sizes="96x96" />
+    <link rel="apple-touch-icon" href="{{ "icons/apple-touch-icon.png" | relURL }}?v={{ $vApple }}" sizes="180x180" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="{{ .Site.Title }}" />
+    <link rel="manifest" href="{{ "manifest.json" | relURL }}?v={{ $vManifest }}" />
+
+    <!-- Atom / RSS -->
+    {{ with .OutputFormats.Get "SectionsAtom" -}}
+        <link rel="{{ .Rel }}" type="{{ .MediaType }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+    {{ end -}}
+    {{ with .OutputFormats.Get "SectionsRSS" -}}
+        <link rel="{{ .Rel }}" type="{{ .MediaType }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+    {{ end }}
+
+    {{ if .Scratch.Get "share_page" -}}
+        <meta name="robots" value="noindex,nofollow">
+    {{ else -}}
+        <!-- SEO -->
+        <link rel="canonical" href="{{ .Permalink }}" />
+    {{ end -}}
+    <!-- JSON-LD -->
+    {{- with .Site.Params.jsonLD -}}
+        {{ partial "utils/json-ld.html" (dict "$" $ "description" $description) }}
+    {{- end }}
+
+    <!-- Twitter Cards -->
+    {{- with .Site.Params.twitterCards -}}
+        {{ partial "utils/twitter-cards.html" (dict "$" $) }}
+    {{- end }}
+    <!-- Open Graph -->
+    {{- with .Site.Params.openGraph -}}
+        {{ partial "utils/open-graph.html" (dict "$" $ "description" $description) }}
+    {{- end }}
+
+    {{- with .Site.Params.googleSiteVerification }}
+        <meta name="google-site-verification" content="{{ . }}" />
+    {{- end }}
+
+    {{- if and .Site.Params.enableGoogleAnalytics (eq hugo.Environment "production") }}
+        <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+
+        {{ partial "third-party/google-analytics.html" . }}
+    {{- end }}
+
+    {{- if or .Site.Params.enableGoogleAutoAds .Site.Params.enableGoogleAdUnits }}
+        {{ if eq hugo.Environment "production" }}
+            {{ partial "third-party/google-adsense.html" . }}
+        {{ end }}
+    {{- end }}
+
+    {{- if and .Site.Params.enableGoogleAutoAds (eq hugo.Environment "production") -}}
+        {{ partial "third-party/google-adsense-auto.html" . }}
+    {{- end }}
+
+    <!-- Yandex.Metrika -->
+    {{ if and .Site.Params.yandexMetrikaId (eq hugo.Environment "production") }}
+        {{ partial "third-party/yandex-metrika.html" . }}
+    {{- end }}
+
+    {{ partial "custom/head.html" . }}
+</head>
