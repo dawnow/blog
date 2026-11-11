@@ -1,8 +1,13 @@
 {{- /* 返回 static/ 下某个文件的内容哈希，用于给 URL 加 ?v= 版本号。
        文件名不变时浏览器会一直用缓存里的旧图标，加版本号才能让改动立即生效。
+
+       算哈希前先把 CRLF 归一成 LF：仓库里存的是 LF，而 core.autocrlf=true
+       会在 checkout 时转成 CRLF，不归一化的话本地构建和 Netlify 构建会得出
+       两个不同的版本号。
+
        用法：partial "utils/asset-version.html" (dict "path" "static/favicon.ico") */ -}}
 {{- $v := "" -}}
 {{- with os.ReadFile .path -}}
-    {{- $v = printf "%x" (hash.FNV32a .) -}}
+    {{- $v = printf "%x" (hash.FNV32a (replace . "\r\n" "\n")) -}}
 {{- end -}}
 {{- return $v -}}
