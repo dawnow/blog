@@ -28,8 +28,8 @@
 {{- with $images -}}
     <meta property="og:image" content="{{ index . 0 }}" />
 {{ else -}}
-    {{- /* 没有配图时用 512px 的应用图标，而不是 180px 的 touch icon */ -}}
-    <meta property="og:image" content="{{ "icons/web-app-manifest-512x512.png" | absURL }}" />
+    {{- /* 没有配图时用不透明的 512 图标：透明 PNG 在部分社交平台会被合成到黑底 */ -}}
+    <meta property="og:image" content="{{ "icons/og-image.png" | absURL }}" />
 {{- end -}}
 
 {{- if and $.IsPage (in $.Site.Params.mainSections $.Section) -}}
