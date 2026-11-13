@@ -21,7 +21,7 @@
         {{- $img = $img | absURL -}}
 
         {{- /* 社交卡片（og:image / JSON-LD）统一取 1200px 的图床变体：
-               正文里的 srcset 最高 1280w，而卡片只需要一张够大的图；
+               正文图片最大也是 1280px，而卡片只需要一张够大的图；
                原图动辄 12 MB，抓取方会直接超时。 */ -}}
         {{- $base := index (split $img "?") 0 -}}
         {{- if hasPrefix $base "https://img.thethinningdark.com/" -}}
