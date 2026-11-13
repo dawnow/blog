@@ -20,6 +20,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 
@@ -52,13 +53,23 @@ def collect_urls():
 
 def fetch_dims(url):
     try:
-        req = urllib.request.Request(urllib.parse.quote(url, safe=":/") + "?imageInfo")
+        # safe 里必须保留 %：content/ 里有些图片名本来就是百分号编码的中文，
+        # 再 quote 一次会变成 %25E4%25B8... 的双重编码，COS 直接 404。
+        req = urllib.request.Request(urllib.parse.quote(url, safe=":/%") + "?imageInfo")
         req.add_header("User-Agent", UA)
         with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.loads(resp.read().decode())
         return url, int(data["width"]), int(data["height"])
     except Exception:
         return url, 0, 0
+
+
+def load_previous():
+    try:
+        with open(OUT, encoding="utf-8") as fh:
+            return json.load(fh)
+    except Exception:
+        return {}
 
 
 def main():
@@ -69,13 +80,28 @@ def main():
     with cf.ThreadPoolExecutor(max_workers=6) as pool:
         rows = list(pool.map(fetch_dims, urls))
 
-    dims = {}
-    missing = 0
+    # 并发跑完后串行补一次：COS 的 ?imageInfo 在并发下偶尔会失败，
+    # 一次失败不代表图片真的没了，不能据此把已有条目删掉。
+    retried = []
     for url, w, h in rows:
-        if not w or not h:
-            missing += 1
+        if w and h:
+            retried.append((url, w, h))
             continue
+        time.sleep(0.3)
+        retried.append(fetch_dims(url))
+
+    previous = load_previous()
+    dims = {}
+    missing = []
+    for url, w, h in retried:
         key = url[len(HOST):]
+        if not w or not h:
+            missing.append(key)
+            # 补不到就沿用上次的尺寸，宁可保留旧数据，也不要静默丢条目
+            for k in (key, urllib.parse.unquote(key)):
+                if k in previous:
+                    dims[k] = previous[k]
+            continue
         dims[key] = [w, h]
         decoded = urllib.parse.unquote(key)
         if decoded != key:
@@ -85,7 +111,9 @@ def main():
     with open(OUT, "w", encoding="utf-8") as fh:
         json.dump(dims, fh, ensure_ascii=False, separators=(",", ":"))
 
-    print(f"URL {len(urls)} 个，写入 {len(dims)} 条，未命中 {missing}")
+    print(f"URL {len(urls)} 个，写入 {len(dims)} 条，未命中 {len(missing)}")
+    for key in missing:
+        print(f"  未命中: {key}（已沿用旧尺寸，若确已删除请手动清理）")
     print(f"已写入 {OUT}")
 
 
