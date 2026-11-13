@@ -1478,7 +1478,9 @@ uglyURLs = false
         lunr_stemmer = "/npm/lunr-languages@1.4.0/min/lunr.stemmer.support.min.js"
         lunr_lang = "/npm/lunr-languages@1.4.0/min/lunr.de.min.js"
         mathjax = "/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"
-        medium_zoom = "js/medium-zoom.min.js"
+        # 本地打过补丁的 medium-zoom 1.0.6：≤720px 时不再等 srcset 高清副本 load 才开始缩放，
+        # 避免手机端点开图片时「先黑/白闪一下，图片才放大」。
+        medium_zoom = "js/medium-zoom.patched.min.js"
         mermaid = "/npm/mermaid@8.8.3/dist/mermaid.min.js"
         qrcode = "/npm/qrcode-generator@1.4.4/qrcode.min.js"
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
