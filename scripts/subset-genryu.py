@@ -5,9 +5,18 @@
     hugo --gc --minify                     # 先构建，产出 public/
     python scripts/subset-genryu.py        # 按页面用字重切，写入 public/fonts/
     python scripts/subset-genryu.py --check  # 只检查覆盖情况，不改文件
+    python scripts/subset-genryu.py --write-static
+                                           # 重切的同时，把结果写回
+                                           # static/fonts/ 作为兜底快照
+                                           # （npm run fonts:sync 就是这个）
 
-源字体在 fonts-src/（完整字库，不参与部署）；输出只写 public/fonts/，
+源字体在 fonts-src/（完整字库，不参与部署）；输出默认只写 public/fonts/，
 因此每次构建都会按当次页面用字重新切，发新文章不用手动处理。
+
+static/fonts/ 里的子集只给「没有 fontTools 的构建环境」和 `hugo server`
+本地预览兜底；它不会自动跟着正文更新，正文新增了字之后要手动跑一次
+`npm run fonts:sync`，否则这些环境会回落到系统字体（线上 Netlify 构建有
+Python，会自己重切，不受影响）。
 
 若 public/ 不存在，说明还没构建，脚本直接报错退出。
 """
@@ -43,9 +52,9 @@ OUT_DIR = os.path.join(PUBLIC, "fonts")
 # 会回落到系统衬线体，与中文标题的字形不搭。
 # 源字体没有的字符（emoji 等）会在子集化时被自动忽略。
 
-# 排版符号兜底：即使当前页面没用到也保留，避免改 captionPrefix（◎ ↔ ※）
-# 或日后写作引入这些符号时突然回落到系统字体。
-ALWAYS = set("◎※→←↑↓①②③④⑤℃°±×÷≠≤≥…—–‘’“”「」『』◆●○")
+# 排版符号兜底：即使当前页面没用到也保留，避免改 captionPrefix（◎ ↔ ※）、
+# 换掉 hr 的三连点（·）或日后写作引入这些符号时突然回落到系统字体。
+ALWAYS = set("◎※·→←↑↓①②③④⑤℃°±×÷≠≤≥…—–‘’“”「」『』◆●○")
 ASCII = {chr(c) for c in range(0x20, 0x7F)}
 
 
@@ -223,6 +232,15 @@ def main():
         f"页面 {pages} 个，用字 {len(chars)} 个；"
         f"{total_before / 1024 / 1024:.1f} MB -> {total_after / 1024 / 1024:.2f} MB"
     )
+
+    if "--write-static" in sys.argv[1:]:
+        # 兜底快照：给没有 fontTools 的构建环境，以及 `hugo server` 本地预览用。
+        # 正文新增了字就要重跑一次，否则这些环境会回落到系统字体。
+        static_dir = os.path.join(REPO, "static", "fonts")
+        os.makedirs(static_dir, exist_ok=True)
+        for out in ("GenRyuMin2TC-R-subset.woff2", "GenRyuMin2TC-B-subset.woff2"):
+            shutil.copyfile(os.path.join(OUT_DIR, out), os.path.join(static_dir, out))
+            print(f"static/fonts/{out} 已更新")
 
     try:
         fingerprint_and_patch(
