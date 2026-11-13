@@ -20,7 +20,8 @@
     "fonts": "hugo --gc --minify && node scripts/subset-fonts.mjs",
     "fonts:sync": "hugo --gc --minify --cleanDestinationDir && node scripts/subset-fonts.mjs --write-static",
     "check:fonts": "node scripts/subset-fonts.mjs --check",
-    "dims": "python scripts/image-dims.py"
+    "dims": "python scripts/image-dims.py",
+    "fonts:amst": "python scripts/subset-amstelvar.py"
   },
   "repository": {
     "type": "git",

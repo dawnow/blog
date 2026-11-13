@@ -187,6 +187,12 @@
     font-style: normal;
 }
 
+// 正文拉丁的三根轴：宽度、光学尺寸、大写高度。
+// 这三个值和 scripts/subset-amstelvar.py 里的 PINS 必须保持一致——该脚本已经把它们
+// 烘进字体轮廓，所以这里的声明对现在的字体文件是空转。留着有两个理由：
+//   1. 字体 URL 没带内容哈希，强缓存（immutable）的访客手里可能还是旧的完整 VF，
+//      对那份文件这几行仍然生效，删掉就会让他们的正文突然变宽；
+//   2. 想改观感时改这里 + 重跑那个脚本，比翻字体二进制直观。
 :root {
     --text-wdth: 90;
     --text-opsz: 40;
@@ -211,6 +217,11 @@ body {
 
 // Amstelvar 自托管（TypeNetwork），正文拉丁字形用
 // https://github.com/TypeNetwork/Amstelvar
+//
+// 这里的文件不是上游的完整 12 轴 VF，而是 scripts/subset-amstelvar.py 生成的
+// 「固定轴 + 拉丁子集」版本：697 KB -> 58 KB。只保留 wght 一个可变轴，所以下面的
+// font-weight: 100 900 照常生效（正文 400、<strong> 700 都在用）。
+// 上游完整 VF 留在 fonts-src/，要重新生成或升级字体就改那个脚本再跑一次。
 @font-face {
     font-family: 'Amstelvar';
     font-display: swap;
