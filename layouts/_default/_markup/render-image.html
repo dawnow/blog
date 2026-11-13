@@ -1,0 +1,15 @@
+{{- $alt := .Text -}}
+{{- if not $alt }}{{ $alt = .Title }}{{ end -}}
+{{- $src := .Destination -}}
+{{- /* 图床支持腾讯 COS 的图片处理：统一取 1280w 缩略图，避免手机下载原图（单张可达 12 MB）。
+       thumbnail/Wx> 里的 > 用 %3E 表示「不超过」，防止小图被放大。
+       1280w 对 DPR3 手机（约 1170 设备像素）和 1440px 桌面都够用。 */ -}}
+{{- if and (hasPrefix $src "https://img.thethinningdark.com/") (not (strings.Contains $src "?")) -}}
+    {{- $url := replace $src " " "%20" -}}
+    {{- $src = printf "%s?imageMogr2/thumbnail/1280x%%3E/quality/82" $url -}}
+{{- end -}}
+{{- /* 刻意不输出 loading="lazy" / decoding="async" / width / height：
+       medium-zoom 打开图片时会把 <img> 克隆到 body 下再做 transform 动画，这几项会让克隆体
+       重新排布或延后绘制，iOS 上就是「点开先空白一帧」。2026-11-13 的 368b307 验证过：
+       去掉它们之后手机端不再闪，代价是图片改回 eager、CLS 与尺寸占位也一并放弃。 */ -}}
+<img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }} />
