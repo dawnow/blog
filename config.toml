@@ -409,11 +409,6 @@ uglyURLs = false
     # 说明：用于 HTML 的头部元数据、JSON-LD、
     #      Open Graph、Atom、RSS
 
-    # Folo 的 feed 归属验证串
-    # 只拼进 Atom / RSS 的频道描述，不进网页的
-    # meta description 与 Open Graph。
-    foloVerification = "This message is used to verify that this feed (feedId:1172691653463244800) belongs to me (userId:59840182088728576). Join me in enjoying the next generation information browser https://folo.is."
-
     # 站点的创建时间
     siteCreatedTime = "2017-05-15T20:17:43+00:00"
     # 注意：请保持此格式，更改数字

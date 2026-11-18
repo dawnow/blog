@@ -14,7 +14,7 @@
     <channel>
         <title>{{ .Site.Title }}</title>
         <link>{{ .Permalink }}</link>
-        <description>{{ .Site.Params.siteDescription }}{{ with .Site.Params.foloVerification }} {{ . }}{{ end }}</description>
+        <description>{{ .Site.Params.siteDescription }}</description>
         <generator>Hugo {{ hugo.Version }} https://gohugo.io/</generator>
         {{ with .Site.Language.Locale }}
             <language>{{ . }}</language>
