@@ -39,30 +39,34 @@ workbox.routing.registerRoute(
     })
 );
 
-// 图片：缓存优先
+// 图片：缓存优先（函数匹配，确保跨源且带 ?imageMogr2 参数的 COS 图床图片也能命中）
 workbox.routing.registerRoute(
-    /\.(?:png|jpe?g|gif|bmp|webp|svg|ico)$/,
+    ({ request, url }) =>
+        request.destination === 'image' &&
+        (url.origin === self.location.origin || url.origin === 'https://img.thethinningdark.com'),
     new workbox.strategies.CacheFirst({
         cacheName: `${CACHE_PREFIX}-images`,
         plugins: [
             new workbox.expiration.ExpirationPlugin({
                 maxEntries: 200,
                 maxAgeSeconds: 30 * 24 * 60 * 60,
+                purgeOnQuotaError: true,
             }),
             new workbox.cacheableResponse.CacheableResponsePlugin({ statuses: [0, 200] }),
         ],
     })
 );
 
-// 字体：缓存优先（HTTP 已是 immutable，这里只为离线兜底）
+// 字体：缓存优先（HTTP 已是 immutable，这里只为离线兜底；含 Regular 分片共 16 个 woff2，预留两代哈希轮换余量）
 workbox.routing.registerRoute(
     /\/fonts\/.*\.woff2$/,
     new workbox.strategies.CacheFirst({
         cacheName: `${CACHE_PREFIX}-fonts`,
         plugins: [
             new workbox.expiration.ExpirationPlugin({
-                maxEntries: 10,
+                maxEntries: 40,
                 maxAgeSeconds: 365 * 24 * 60 * 60,
+                purgeOnQuotaError: true,
             }),
             new workbox.cacheableResponse.CacheableResponsePlugin({ statuses: [0, 200] }),
         ],
