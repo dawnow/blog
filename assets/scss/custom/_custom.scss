@@ -86,15 +86,6 @@
     margin-bottom: 1em;
 }
 
-// 归档列表对齐正文左边界：去掉缩进与圆点，分隔交给虚线
-.now-bygone .list-item-title {
-    margin: 0 0.618em 0 0;
-}
-
-.now-bygone .list-item-title::before {
-    display: none;
-}
-
 .brand {
     font-family: Lato, sans-serif;
     font-weight: bold;
