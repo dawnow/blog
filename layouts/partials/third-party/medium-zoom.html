@@ -1,0 +1,15 @@
+{{- /* 仅在页面实际包含 <img> 时加载 medium-zoom，避免首页、归档与纯文字文章白拉脚本 */ -}}
+{{- if strings.Contains .Content "<img" -}}
+{{- $src := partial "utils/lib.html" (dict "$" . "type" "medium-zoom") -}}
+
+<script src="{{ $src }}"></script>
+
+<script>
+    let imgNodes = document.querySelectorAll('div.post-body img');
+    imgNodes = Array.from(imgNodes).filter(node => node.parentNode.tagName !== "A");
+
+    mediumZoom(imgNodes, {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+{{- end -}}

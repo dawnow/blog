@@ -11,12 +11,13 @@
     {{- $key := strings.TrimPrefix $host $orig -}}
     {{- with index hugo.Data.imagedims $key -}}{{- $dims = . -}}{{- end -}}
 {{- end -}}
-{{- /* 图床支持腾讯 COS 的图片处理：统一取 1280w 缩略图，避免手机下载原图（单张可达 12 MB）。
-       thumbnail/Wx> 里的 > 用 %3E 表示「不超过」，防止小图被放大。
+{{- /* 图床支持腾讯 COS 的图片处理：静图统一取 1280w WebP 变体，避免手机下载原图（单张可达 12 MB）。
+       thumbnail/Wx> 里的 > 用 %3E 表示「不超过」，防止小图被放大；ignore-error/1 确保异常时回退原图。
+       GIF 动图跳过处理，避免触发 COS 的帧数/总像素上限而报错。
        1280w 对 DPR3 手机（约 1170 设备像素）和 1440px 桌面都够用。 */ -}}
-{{- if and (hasPrefix $src "https://img.thethinningdark.com/") (not (strings.Contains $src "?")) -}}
+{{- if and (hasPrefix $src "https://img.thethinningdark.com/") (not (strings.Contains $src "?")) (not (hasSuffix (lower $src) ".gif")) -}}
     {{- $url := replace $src " " "%20" -}}
-    {{- $src = printf "%s?imageMogr2/thumbnail/1280x%%3E/quality/82" $url -}}
+    {{- $src = printf "%s?imageMogr2/thumbnail/1280x%%3E/format/webp/quality/82/ignore-error/1" $url -}}
 {{- end -}}
 {{- /* 刻意不输出 loading="lazy" / decoding="async"：
        medium-zoom 打开图片时会把 <img> 克隆到 body 下再做 transform 动画，这两项会让克隆体
