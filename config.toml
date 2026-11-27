@@ -972,7 +972,7 @@ uglyURLs = false
     #      SVG，则可留空（""）品牌栏字体。
 
     # 品牌栏
-    fontFamilySiteBrand = "'Noto Serif TC', 'Noto Serif SC', serif"
+    fontFamilySiteBrand = "Lato, sans-serif"
     # 菜单栏
     fontFamilyMenu = ""
     # 文章标题、文章副标题、列表标题、列表的年份和月份标题、相关文章标题、文章上下篇标题、表格的表头、定义列表中的术语
@@ -1343,7 +1343,7 @@ uglyURLs = false
     # 说明：仅对 MemE 生成的 CSS 和 JS 有效
 
     # 是否开启文件指纹
-    enableFingerprint = false
+    enableFingerprint = true
 
     # 是否开启子资源完整性验证
     enableSRI = false

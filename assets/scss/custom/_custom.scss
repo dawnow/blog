@@ -21,6 +21,12 @@
 .list-title, .term-title, .list-year, .list-month, [data-type="about"] .post-title, .now-index .post-title {
     font-family: 'glyph-correction', 'Cinzel Decorative', 'GenRyuMinTC', serif;
 }
+
+// 文章标题用 600：源流明体（仅 400/700）仍命中 Bold 700，
+// 连续可变轴的 Amstelvar 则从偏厚重的 700 收细到 600，与列表页英文气质更统一。
+.post-title {
+    font-weight: 600;
+}
 // Now 页顶部的说明：顶部细线 + 小字，像书里的「凡例」。
 // 不用盒子——全站只有一个圆角矩形会显得像插入的 UI 组件。
 .now-pin {
@@ -110,7 +116,7 @@
 }
 
 [data-theme="dark"] {
-    .theme-icon-dark, #lang-switcher, .footer-icon {
+    .theme-icon-dark, .theme-icon-system, #lang-switcher, .footer-icon {
         opacity: 0.75;
     }
 }
@@ -146,17 +152,6 @@
             display: inline-block;
         }
     }
-
-    :root {
-        .theme-icon-light {
-            display: inline;
-        }
-    }
-    [data-theme="dark"] {
-        .theme-icon-dark {
-            display: inline !important;
-        }
-    }
     #lang-switcher {
         margin: 0;
     }
@@ -172,27 +167,13 @@
 }
 
 // https://github.com/ButTaiwan/genryu-font
-@font-face {
-    font-family: 'GenRyuMinTC';
-    font-display: swap;
-    src: url('#{$baseRelURL}/fonts/GenRyuMin2TC-R-subset.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'GenRyuMinTC';
-    font-display: swap;
-    src: url('#{$baseRelURL}/fonts/GenRyuMin2TC-B-subset.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+// GenRyuMinTC 的 Regular 分片与 Bold 子集 @font-face 由 scripts/subset-genryu.py 生成
+@import "genryu-faces";
 
 // 正文拉丁的三根轴：宽度、光学尺寸、大写高度。
 // 这三个值和 scripts/subset-amstelvar.py 里的 PINS 必须保持一致——该脚本已经把它们
-// 烘进字体轮廓，所以这里的声明对现在的字体文件是空转。留着有两个理由：
-//   1. 字体 URL 没带内容哈希，强缓存（immutable）的访客手里可能还是旧的完整 VF，
-//      对那份文件这几行仍然生效，删掉就会让他们的正文突然变宽；
-//   2. 想改观感时改这里 + 重跑那个脚本，比翻字体二进制直观。
+// 烘进字体轮廓，且构建时会为全部 woff2 加内容哈希，所以这里的声明对现在的字体文件是空转。
+// 保留它作为直观的参数记录：想改观感时改这里 + 重跑 subset-amstelvar.py 即可。
 :root {
     --text-wdth: 90;
     --text-opsz: 40;
@@ -241,7 +222,7 @@ body {
     font-style: italic;
 }
 
-// Source Code Pro / Cinzel Decorative 自托管（原 Google Fonts），走 jsDelivr
+// Source Code Pro / Cinzel Decorative 自托管（原 Google Fonts），走自家域名
 @font-face {
     font-family: 'Source Code Pro';
     font-display: swap;
@@ -284,10 +265,6 @@ article:lang(en-US) .drop-cap {
     margin-right: 16px;
     margin-top: 15px !important;
     line-height: calc(var(--font-size) * var(--line-height));
-}
-
-.list-item-time {
-    font-feature-settings: 'tnum';
 }
 
 

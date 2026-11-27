@@ -1,2 +1,12 @@
-{{- /* 正文字重预加载：让首屏文字尽早用上子集字体 */ -}}
-<link rel="preload" href="{{ "fonts/GenRyuMin2TC-R-subset.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- /* 首屏关键字体预加载：
+       - 全站预加载极小的源流明体 s0 分片（首页+导航+基础符号）与品牌字 Lato；
+       - 非首页（文章/近况/关于）再预加载正文拉丁主力字体 Amstelvar */ -}}
+<link rel="preload" href="{{ "fonts/GenRyuMin2TC-R-s0.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "fonts/lato-latin-700-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- if not .IsHome }}
+<link rel="preload" href="{{ "fonts/Amstelvar-Roman-VF.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{- end }}
+{{- /* 仅在正文实际包含图床图片时提前建连（<img> 默认非 CORS，不加 crossorigin） */ -}}
+{{- if strings.Contains .RawContent "img.thethinningdark.com" }}
+<link rel="preconnect" href="https://img.thethinningdark.com">
+{{- end }}
