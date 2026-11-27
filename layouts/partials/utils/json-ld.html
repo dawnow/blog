@@ -46,7 +46,7 @@
         },
         {{ end -}}
         {{ with $author.copyright -}}
-        "license": {{ . | plainify | htmlUnescape }},
+        "license": {{ . | markdownify | plainify | htmlUnescape | strings.TrimSpace }},
         {{ end -}}
         "name": {{ $rawTitle }}
     }
@@ -92,7 +92,7 @@
         },
         {{ end -}}
         {{ with $author.copyright -}}
-        "license": {{ . | plainify | htmlUnescape }},
+        "license": {{ . | markdownify | plainify | htmlUnescape | strings.TrimSpace }},
         {{ end -}}
         "publisher": {
             "@type": "Organization",
@@ -129,7 +129,7 @@
         {{ end -}}
         {{ end -}}
         {{ with $author.copyright -}}
-        "license": {{ . | plainify | htmlUnescape }},
+        "license": {{ . | markdownify | plainify | htmlUnescape | strings.TrimSpace }},
         {{ end -}}
         "publisher": {
             "@type": "Organization",

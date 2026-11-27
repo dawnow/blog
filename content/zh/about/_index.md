@@ -10,14 +10,14 @@ draft: false
 
 ## 致謝
 
-- [Hugo](https://gohugo.io/)／[Meme](https://themes.gohugo.io/hugo-theme-meme/)／[Netlify](https://app.netlify.com/)／[Google Fonts](https://fonts.google.com/)／[Unsplash](https://unsplash.com/)
+- [Hugo](https://gohugo.io/)／[Meme](https://themes.gohugo.io/hugo-theme-meme/)／[Netlify](https://app.netlify.com/)／[Unsplash](https://unsplash.com/)
 - [reuixiy](https://io-oi.me/)<sup>Theme Creator</sup>
 
 ## 追蹤
 
 通過 [Atom](https://thethinningdark.com/atom.xml) / [RSS](https://thethinningdark.com/rss.xml) 訂閲本博客，或是在 [Folo](https://folo.is/) 的發現頁面直接搜索「the thinning dark」[^2]。
 
-本博客為一個 [PWA](https://web.dev/progressive-web-apps/) 站點，所以你也可以將本站點添加至你的設備以便隨時查看
+本博客為一個 [PWA](https://web.dev/progressive-web-apps/) 站點，所以你也可以將本站點添加至你的設備以便隨時查看。
 
 ## 聯絡
 
@@ -25,7 +25,7 @@ draft: false
 
 ## 許可
 
-若無特殊聲明，本站所有文章均按照 [CC BY-SA 4.0 協議](https://creativecommons.org/licenses/by-sa/4.0/) 發佈。
+若無特殊聲明，本站所有文章均按照 [CC BY-NC-SA 4.0 協議](https://creativecommons.org/licenses/by-nc-sa/4.0/) 發佈。
 
 ![](https://img.thethinningdark.com/images/202502041458675.png)
 
